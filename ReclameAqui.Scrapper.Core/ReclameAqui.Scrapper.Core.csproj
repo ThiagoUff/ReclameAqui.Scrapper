@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReclameAqui.Scrapper.Domain\ReclameAqui.Scrapper.Domain.csproj" />
+    <ProjectReference Include="..\ReclameAqui.Scrapper.Infra\ReclameAqui.Scrapper.Infra.csproj" />
+    <ProjectReference Include="..\ReclameAqui.Scrapper.Service\ReclameAqui.Scrapper.Service.csproj" />
+  </ItemGroup>
+
+</Project>
