@@ -6,31 +6,31 @@ namespace ReclameAqui.Scrapper.Infra.Repository
 {
     public class TimRepository : ITimRepository
     {
-        private readonly IMongoCollection<TimEntity> _db;
+        private readonly IMongoCollection<ReclameAquiEntity> _db;
         public TimRepository()
         {
-            MongoClient client = new ("mongodb+srv://Tim:Tim*123@cluster0.m2fru0i.mongodb.net/test");
+            MongoClient client = new ("mongodb://localhost:27017");
             IMongoDatabase database = client.GetDatabase("ReclameAqui");
-            _db = database.GetCollection<TimEntity>("Tim");
+            _db = database.GetCollection<ReclameAquiEntity>("Tim");
         }
 
-        public async Task InsertOne(TimEntity entity) 
+        public async Task InsertOne(ReclameAquiEntity entity) 
         {
             await _db.InsertOneAsync(entity);
         }
-        public bool Exists(TimEntity entity)
+        public bool Exists(ReclameAquiEntity entity)
         {
-            return _db.Find(Builders<TimEntity>.Filter.Eq("id", entity.Id)).Any();
+            return _db.Find(Builders<ReclameAquiEntity>.Filter.Eq("id", entity.Id)).Any();
         }
 
         public async Task DeleteOne(int id) 
         {
-            await _db.DeleteOneAsync(Builders<TimEntity>.Filter.Eq("id", id));
+            await _db.DeleteOneAsync(Builders<ReclameAquiEntity>.Filter.Eq("id", id));
         }
 
-        public async Task ReplaceOne(TimEntity entity)
+        public async Task ReplaceOne(ReclameAquiEntity entity)
         {
-            await _db.ReplaceOneAsync(Builders<TimEntity>.Filter.Eq("id", entity.Id), entity);
+            await _db.ReplaceOneAsync(Builders<ReclameAquiEntity>.Filter.Eq("id", entity.Id), entity);
         }
     }
 }

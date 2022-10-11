@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Refit" Version="6.3.2" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="6.3.2" />
     <PackageReference Include="Selenium.WebDriver" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ReclameAqui.Scrapper.Domain\ReclameAqui.Scrapper.Domain.csproj" />
+    <ProjectReference Include="..\ReclameAqui.Scrapper.Infra\ReclameAqui.Scrapper.Infra.csproj" />
   </ItemGroup>
 
 </Project>
