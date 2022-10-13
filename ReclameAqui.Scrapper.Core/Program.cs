@@ -10,7 +10,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
 
 //Runner(host.Services);
 ITimService service = host.Services.GetRequiredService<ITimService>();
-service.Scrapper();
+await service.ExtractInfo();
 //static void Runner(IServiceProvider services)
 //{
 //    using IServiceScope serviceScope = services.CreateScope();

@@ -2,6 +2,7 @@
 {
     public interface ITimService
     {
-        void Scrapper();
+        Task ExtractInfo();
+        Task Scrapper();
     }
 }

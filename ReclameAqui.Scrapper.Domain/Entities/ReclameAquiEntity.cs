@@ -2,7 +2,7 @@
 {
     public class ReclameAquiEntity
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public Complaint complaint { get; set; }
         public Category category { get; set; }
         public ProductType productType { get; set; }
