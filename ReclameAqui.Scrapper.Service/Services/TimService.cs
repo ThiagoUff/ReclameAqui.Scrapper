@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Text;
 using DocumentFormat.OpenXml.Spreadsheet;
 using ClosedXML.Excel;
+using ReclameAqui.Scrapper.Domain.Enum;
 
 namespace ReclameAqui.Scrapper.Service.Services
 {
@@ -73,28 +74,74 @@ namespace ReclameAqui.Scrapper.Service.Services
 
         public async Task Scrapper()
         {
-            List<Tuple<string, string>> idList = new List<Tuple<string, string>>();
-            int limit = 5000;
-            int total = 0;
-            int i = 1000;
 
-            for (; i < 50000; i = i + 10)
+
+            //var xpto = await ProcessPaginatedPage("https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina=1&status=NOT_ANSWERED&categoria=000000000000006&produto=0000000000000476&problema=0000000000000078");
+            IEnumerable<ProblemaEnum> problemas = Enum.GetValues(typeof(ProblemaEnum)).Cast<ProblemaEnum>();
+            IEnumerable<CategoriaEnum> categorias = Enum.GetValues(typeof(CategoriaEnum)).Cast<CategoriaEnum>();
+            IEnumerable<ProdutosEnum> produtos = Enum.GetValues(typeof(ProdutosEnum)).Cast<ProdutosEnum>();
+            IEnumerable<StatusEnum> statusList = Enum.GetValues(typeof(StatusEnum)).Cast<StatusEnum>();
+
+
+            foreach (var status in statusList)
+            {
+                foreach (var problema in problemas)
+                {
+                    foreach (var categoria in categorias)
+                    {
+                        //Parallel.ForEach(produtos, new ParallelOptions() { MaxDegreeOfParallelism = 2 }, async produto =>
+                        //{
+                        //    await ProcessLink(status.GetEnumDescription(), problema.GetEnumDescription(), categoria.GetEnumDescription(), produto.GetEnumDescription());
+                        //});
+                        foreach (var produto in produtos)
+                        {
+                            await ProcessLink(status.GetEnumDescription(), problema.GetEnumDescription(), categoria.GetEnumDescription(), produto.GetEnumDescription());
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+        private async Task ProcessLink(string status, string problema, string categoria, string produto)
+        {
+            List<Tuple<string, string>> idList = new();
+            int limit = 1000;
+
+            for (int i = 1; i < limit; i += 10)
             {
                 ReclameAquiPagination paginate;
                 try
                 {
                     Stopwatch sw = Stopwatch.StartNew();
-                    paginate = await ProcessPaginatedPage($"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}");
+                    string url = $"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}&status={status}&categoria={categoria}&produto={produto}&problema={problema}";
+                    paginate = await ProcessPaginatedPage(url);
                     sw.Stop();
-                    Console.WriteLine($"Tempo para obter pagina {i/10} de reclamações: {sw.Elapsed}");
+                    Console.WriteLine($"Tempo para obter pagina {url}  de reclamações: {sw.Elapsed}");
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     continue;
                 }
+                if (paginate == null)
+                    break;
+                IEnumerable<PageItens> items;
+                if (paginate.LAST is not null)
+                    items = paginate.LAST;
+                else if (paginate.NOT_ANSWERED is not null)
+                    items = paginate.NOT_ANSWERED;
+                else if (paginate.ANSWERED is not null)
+                    items = paginate.ANSWERED;
+                else if (paginate.EVALUATED is not null)
+                    items = paginate.EVALUATED;
+                else
+                    break;
+                ;
                 limit = paginate.count;
                 int index = 0;
-                foreach (var item in paginate.LAST)
+                foreach (var item in items)
                 {
                     try
                     {
@@ -140,7 +187,7 @@ namespace ReclameAqui.Scrapper.Service.Services
                                                            .Replace("[editado-pelo-reclame-aqui]", "");
                         title = title.Length == 0 ? title : title.Last() == '-' ? title.Substring(0, title.Length - 1) : title;
                         string url = $"https://www.reclameaqui.com.br/live-tim/{title}_{item.id}/";
-                       
+
                         Stopwatch sw = Stopwatch.StartNew();
                         var entity = await ProcessPage(url);
                         sw.Stop();
@@ -151,25 +198,23 @@ namespace ReclameAqui.Scrapper.Service.Services
                         //else
                         //    _reclameAquiRepository.InsertOne(entity.Item1);
 
-                        Stopwatch sw2 = Stopwatch.StartNew();
                         if (_timRepository.Exists(entity.Item2))
                         {
                             TimEntity tim = await _timRepository.FindOne(entity.Item1.Id);
-                            if (entity.Item2.Equals(tim))
-                            {
-                                sw2.Stop();
+                            //if (entity.Item2.Equals(tim))
+                            //{
+                            //    sw2.Stop();
 
-                                Console.WriteLine($"Page: {(int)i / 10} - Item:{index++} - Total:{total++} - ID: {item.id} - Elapse page: {sw.Elapsed} - Elapse Mongo: {sw2.Elapsed} - Url:{url}");
-                                break;
-                            }
-                            else
-                                _timRepository.ReplaceOne(entity.Item2);
+                            //    Console.WriteLine($"Page: {(int)i / 10} - Item:{index++} - Total:{total++} - ID: {item.id} - Elapse page: {sw.Elapsed} - Elapse Mongo: {sw2.Elapsed} - Url:{url}");
+                            //    break;
+                            //}
+                            //else
+                            await _timRepository.ReplaceOne(entity.Item2);
                         }
                         else
-                            _timRepository.InsertOne(entity.Item2);
-                        sw2.Stop();
+                            await _timRepository.InsertOne(entity.Item2);
 
-                        Console.WriteLine($"Page: {(int)i / 10} - Item:{index++} - Total:{total++} - ID: {item.id} - Elapse page: {sw.Elapsed} - Elapse Mongo: {sw2.Elapsed} - Url:{url}");
+                        Console.WriteLine($"Page: {(int)i / 10} - Item:{index++} - Data:{entity.Item2.Data} - ID: {entity.Item2.Id} - Elapse page: {sw.Elapsed} - Url:{url}");
 
                     }
                     catch (Exception ex)
@@ -233,7 +278,7 @@ namespace ReclameAqui.Scrapper.Service.Services
                     }
                 }
 
-                 
+
             }
             catch (Exception ex)
             {
@@ -262,14 +307,13 @@ namespace ReclameAqui.Scrapper.Service.Services
                         response.EnsureSuccessStatusCode();
                         string paginateString = await response.Content.ReadAsStringAsync();
                         string json = paginateString.Substring(paginateString.LastIndexOf("</div>"));
-                        json = json.Substring(json.IndexOf("{\"LAST\":"));
+                        if (json.IndexOf("\"complaints\":{") == -1)
+                            return null;
+                        json = json.Substring(json.IndexOf("\"complaints\":{") + 13);
                         json = json.Substring(0, json.IndexOf(",\"mediaKit\""));
                         return JsonConvert.DeserializeObject<ReclameAquiPagination>(json);
                     }
                 }
-               
-
-               
             }
             catch (Exception ex)
             {
@@ -277,7 +321,7 @@ namespace ReclameAqui.Scrapper.Service.Services
                     return await ProcessPaginatedPage(url, false);
                 throw ex;
             }
-
         }
+
     }
 }

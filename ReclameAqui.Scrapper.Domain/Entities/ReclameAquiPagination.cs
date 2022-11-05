@@ -2,11 +2,16 @@
 {
     public class ReclameAquiPagination
     {
-        public IEnumerable<LAST> LAST { get; set; }
+        public IEnumerable<PageItens> LAST { get; set; }
+        public IEnumerable<PageItens> NOT_ANSWERED { get; set; }
+        public IEnumerable<PageItens> ANSWERED { get; set; }
+        public IEnumerable<PageItens> EVALUATED { get; set; }
+        
+
         public int count { get; set; }
     }
   
-    public class LAST
+    public class PageItens
     {
         public DateTime created { get; set; }
         public string description { get; set; }
