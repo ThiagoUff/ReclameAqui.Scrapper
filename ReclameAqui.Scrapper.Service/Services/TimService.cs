@@ -3,11 +3,9 @@ using ReclameAqui.Scrapper.Domain.Entities;
 using ReclameAqui.Scrapper.Domain.Interfaces.Repository;
 using ReclameAqui.Scrapper.Domain.Interfaces.Services;
 using System.Net;
-using HtmlAgilityPack;
 using ReclameAqui.Scrapper.Service.Utils;
 using System.Diagnostics;
 using System.Text;
-using DocumentFormat.OpenXml.Spreadsheet;
 using ClosedXML.Excel;
 using ReclameAqui.Scrapper.Domain.Enum;
 
@@ -68,8 +66,8 @@ namespace ReclameAqui.Scrapper.Service.Services
 
                 csv.AppendLine($"{item.Id},{item.Titulo},{item.Data},{item.Localizacao},{item.Categoria},{item.Problema},{item.Produto},{item.Descricao},{item.Status},{item.Resolvido},{item.Avaliada},{item.VoltariaNegocio},{item.Nota}");
             }
-            File.WriteAllText(@"..\..\..\..\dataset.csv", csv.ToString());
-            workbook.SaveAs(@"..\..\..\..\dataset.xlsx");
+            File.WriteAllText(@"..//dataset.csv", csv.ToString());
+            workbook.SaveAs(@"dataset.xlsx");
         }
 
         public async Task Scrapper()
@@ -119,7 +117,7 @@ namespace ReclameAqui.Scrapper.Service.Services
                     string url = $"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}&status={status}&categoria={categoria}&produto={produto}&problema={problema}";
                     paginate = await ProcessPaginatedPage(url);
                     sw.Stop();
-                    Console.WriteLine($"Tempo para obter pagina {url}  de reclamações: {sw.Elapsed}");
+                    Console.WriteLine($"{DateTime.Now} - Tempo para obter pagina {url}  de reclamações: {sw.Elapsed}");
                 }
                 catch (Exception ex)
                 {
@@ -214,7 +212,7 @@ namespace ReclameAqui.Scrapper.Service.Services
                         else
                             await _timRepository.InsertOne(entity.Item2);
 
-                        Console.WriteLine($"Page: {(int)i / 10} - Item:{index++} - Data:{entity.Item2.Data} - ID: {entity.Item2.Id} - Elapse page: {sw.Elapsed} - Url:{url}");
+                        Console.WriteLine($"{DateTime.Now} - Page: {(int)i / 10} - Item:{index++} - Data:{entity.Item2.Data} - ID: {entity.Item2.Id} - Elapse page: {sw.Elapsed} - Url:{url}");
 
                     }
                     catch (Exception ex)

@@ -8,7 +8,7 @@ namespace ReclameAqui.Scrapper.Domain.Enum
 {
     public enum StatusEnum
     {
-       // NOT_ANSWERED = 0,
+        NOT_ANSWERED = 0,
         ANSWERED = 1,
         EVALUETED = 2,
         PENDINg = 3,
