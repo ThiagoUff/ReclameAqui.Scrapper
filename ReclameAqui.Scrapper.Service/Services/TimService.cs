@@ -191,28 +191,13 @@ namespace ReclameAqui.Scrapper.Service.Services
                         sw.Stop();
 
 
-                        //if (_reclameAquiRepository.Exists(entity.Item1))
-                        //    _reclameAquiRepository.ReplaceOne(entity.Item1);
-                        //else
-                        //    _reclameAquiRepository.InsertOne(entity.Item1);
-
-                        if (_timRepository.Exists(entity.Item2))
-                        {
-                            TimEntity tim = await _timRepository.FindOne(entity.Item1.Id);
-                            //if (entity.Item2.Equals(tim))
-                            //{
-                            //    sw2.Stop();
-
-                            //    Console.WriteLine($"Page: {(int)i / 10} - Item:{index++} - Total:{total++} - ID: {item.id} - Elapse page: {sw.Elapsed} - Elapse Mongo: {sw2.Elapsed} - Url:{url}");
-                            //    break;
-                            //}
-                            //else
-                            await _timRepository.ReplaceOne(entity.Item2);
-                        }
+                      
+                        if (_timRepository.Exists(entity))
+                            await _timRepository.ReplaceOne(entity);
                         else
-                            await _timRepository.InsertOne(entity.Item2);
+                            await _timRepository.InsertOne(entity);
 
-                        Console.WriteLine($"{DateTime.Now} - Page: {(int)i / 10} - Item:{index++} - Data:{entity.Item2.Data} - ID: {entity.Item2.Id} - Elapse page: {sw.Elapsed} - Url:{url}");
+                        Console.WriteLine($"{DateTime.Now} - Page: {(int)i / 10} - Item:{index++} - Data:{entity.Data} - ID: {entity.Id} - Elapse page: {sw.Elapsed} - Url:{url}");
 
                     }
                     catch (Exception ex)
@@ -223,7 +208,7 @@ namespace ReclameAqui.Scrapper.Service.Services
             }
         }
 
-        private async Task<Tuple<ReclameAquiEntity, TimEntity>> ProcessPage(string url)
+        private async Task<TimEntity> ProcessPage(string url)
         {
             try
             {
@@ -246,33 +231,43 @@ namespace ReclameAqui.Scrapper.Service.Services
                         string json = paginateString.Substring(paginateString.LastIndexOf("</div>"));
                         json = json.Substring(json.IndexOf("{\"complaint\""));
                         json = json.Substring(0, json.IndexOf(",\"__N_SSP\":"));
-                        ReclameAquiEntity entity = JsonConvert.DeserializeObject<ReclameAquiEntity>(json);
-                        entity.Id = entity.complaint.legacyId.Value;
 
-                        TimEntity tim = new TimEntity()
+                        ReclameAquiEntity? entity = JsonConvert.DeserializeObject<ReclameAquiEntity>(json);
+                        
+                        if(entity is null)
+                            throw new Exception("Erro ao deserializar objeto");
+                        if(entity.complaint is null)
+                            throw new Exception("Erro ao deserializar objeto");
+                         if(entity.complaint.legacyId is null)
+                            throw new Exception("Erro ao deserializar objeto");
+                        
+                        entity.Id = entity.complaint.legacyId.Value;
+                        
+                        return new TimEntity()
                         {
                             Categoria = entity.category is null ? null : entity.category.name,
                             Data = entity.complaint.created,
-                            Descricao = HtmlUtil.ConvertToPlainText(entity.complaint.description),
+
+                            Descricao =  HtmlUtil.ConvertToPlainText(entity.complaint.description),
                             Id = entity.complaint.legacyId.Value,
-                            Interacoes = entity.complaint.interactions.Any() ? entity.complaint.interactions.Select(x => new Interacoes()
-                            {
-                                DataInteracao = x.created,
-                                TextoInteracao = HtmlUtil.ConvertToPlainText(x.message),
-                                TipoInteracao = x.type,
-                            }) : null,
+                            Interacoes = (entity.complaint.interactions is not null && entity.complaint.interactions.Any()) 
+                                ? entity.complaint.interactions.Select(x => new Interacoes()
+                                    {
+                                        DataInteracao = x.created,
+                                        TextoInteracao = HtmlUtil.ConvertToPlainText(x.message),
+                                        TipoInteracao = x.type,
+                                    }) 
+                                : null,
                             Localizacao = entity.complaint.userCity,
-                            Nota = entity.complaint.evaluated ? entity.complaint.score : null,
+                            Nota = entity.complaint.score,
                             Problema = entity.problemType is null ? null : entity.problemType.name,
                             Produto = entity.productType is null ? null : entity.productType.name,
-                            Resolvido = entity.complaint.evaluated ? entity.complaint.solved : null,
+                            Resolvido = entity.complaint.solved,
                             Titulo = entity.complaint.title,
-                            VoltariaNegocio = entity.complaint.evaluated ? entity.complaint.dealAgain : null,
+                            VoltariaNegocio = entity.complaint.dealAgain,
                             Avaliada = entity.complaint.evaluated,
                             Status = entity.complaint.status,
-
                         };
-                        return System.Tuple.Create(entity, tim);
                     }
                 }
 

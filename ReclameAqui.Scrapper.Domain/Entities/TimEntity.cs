@@ -14,7 +14,7 @@
         public string Status { get; set; }
         public bool? Resolvido { get; set; }
         public bool? VoltariaNegocio { get; set; }
-        public bool Avaliada { get; set; }
+        public bool? Avaliada { get; set; }
         public int? Nota { get; set; }
 
         public bool Equals(TimEntity? other)
