@@ -13,7 +13,7 @@ pn.extension('vega')
 alt.data_transformers.enable('csv')
 
 
-file_name = 'Visualizations\GeoDataset.xlsx'
+file_name = 'Visualizations\dataset\GeoReclameAqui.xlsx'
 
 geoDf = pd.read_excel(file_name)
 
