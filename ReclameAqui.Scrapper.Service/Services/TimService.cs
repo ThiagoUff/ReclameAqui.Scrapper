@@ -245,7 +245,7 @@ namespace ReclameAqui.Scrapper.Service.Services
             }
         }
 
-        private async Task<IEnumerable<ReclameAquiPagination>> ProcessPaginatedPage(string url, bool redo = true)
+        private async Task<IEnumerable<ReclameAquiPagination>> ProcessPaginatedPage(string url)
         {
             try
             {
@@ -272,8 +272,6 @@ namespace ReclameAqui.Scrapper.Service.Services
             }
             catch (Exception ex)
             {
-                if (redo)
-                    return await ProcessPaginatedPage(url, false);
                 throw ex;
             }
         }
@@ -290,6 +288,7 @@ namespace ReclameAqui.Scrapper.Service.Services
             {
                 firstIndex = webPage.IndexOf("class=\"sc-1pe7b5t-0 bJdtis\"", firstIndex) + 28;
                 lastIndex = webPage.IndexOf("</h4>", firstIndex);
+                if (lastIndex == -1) break;
                 string item = webPage.Substring(firstIndex, lastIndex - firstIndex);
 
                 int startLink = item.IndexOf("href=\"") + 6;
