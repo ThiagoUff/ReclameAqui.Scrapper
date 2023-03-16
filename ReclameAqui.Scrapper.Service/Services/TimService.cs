@@ -8,6 +8,8 @@ using System.Diagnostics;
 using System.Text;
 using ClosedXML.Excel;
 using ReclameAqui.Scrapper.Domain.Enum;
+using DocumentFormat.OpenXml.Spreadsheet;
+using System.Linq;
 
 namespace ReclameAqui.Scrapper.Service.Services
 {
@@ -80,9 +82,10 @@ namespace ReclameAqui.Scrapper.Service.Services
             IEnumerable<ProdutosEnum> produtos = Enum.GetValues(typeof(ProdutosEnum)).Cast<ProdutosEnum>();
             IEnumerable<StatusEnum> statusList = Enum.GetValues(typeof(StatusEnum)).Cast<StatusEnum>();
 
-
+            //await ProcessLink("EVALUATED", "", "", "");
             foreach (var status in statusList)
             {
+
                 foreach (var problema in problemas)
                 {
                     foreach (var categoria in categorias)
@@ -99,14 +102,13 @@ namespace ReclameAqui.Scrapper.Service.Services
                 }
             }
 
-
-
         }
 
         private async Task ProcessLink(string status, string problema, string categoria, string produto)
         {
-            List<Tuple<string, string>> idList = new();
-            int limit = 1000;
+            List<string> idList = new();
+            int limit = 100000;
+            IEnumerable<ReclameAquiPagination> items;
 
             for (int i = 1; i < limit; i += 10)
             {
@@ -114,8 +116,13 @@ namespace ReclameAqui.Scrapper.Service.Services
                 try
                 {
                     Stopwatch sw = Stopwatch.StartNew();
-                    string url = $"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}&status={status}&categoria={categoria}&produto={produto}&problema={problema}";
-                    paginate = await ProcessPaginatedPage(url);
+                    string stat = status == "" ? "" : $"status={status}";
+                    string cat = categoria == "" ? "" : $"categoria={categoria}";
+                    string prod = produto == "" ? "" : $"produto={produto}";
+                    string prob = problema == "" ? "" : $"problema={problema}";
+                    //string url = $"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}&status={status}&categoria={categoria}&produto={produto}&problema={problema}";
+                    string url = $"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}&{stat}&{cat}&{prod}&{prob}";
+                    items = await ProcessPaginatedPage(url);
                     sw.Stop();
                     Console.WriteLine($"{DateTime.Now} - Tempo para obter pagina {url}  de reclamações: {sw.Elapsed}");
                 }
@@ -123,75 +130,75 @@ namespace ReclameAqui.Scrapper.Service.Services
                 {
                     continue;
                 }
-                if (paginate == null)
+
+                if (!items.Any())
                     break;
-                IEnumerable<PageItens> items;
-                if (paginate.LAST is not null)
-                    items = paginate.LAST;
-                else if (paginate.NOT_ANSWERED is not null)
-                    items = paginate.NOT_ANSWERED;
-                else if (paginate.ANSWERED is not null)
-                    items = paginate.ANSWERED;
-                else if (paginate.EVALUATED is not null)
-                    items = paginate.EVALUATED;
-                else
-                    break;
-                ;
-                limit = paginate.count;
+                //IEnumerable<PageItens> items;
+                //if (paginate.LAST is not null)
+                //    items = paginate.LAST;
+                //else if (paginate.NOT_ANSWERED is not null)
+                //    items = paginate.NOT_ANSWERED;
+                //else if (paginate.ANSWERED is not null)
+                //    items = paginate.ANSWERED;
+                //else if (paginate.EVALUATED is not null)
+                //    items = paginate.EVALUATED;
+                //else
+                //    break;
+                //;
+
                 int index = 0;
                 foreach (var item in items)
                 {
                     try
                     {
-                        if (idList.Contains(System.Tuple.Create(item.id, item.title)))
+                        if (idList.Contains(item.Title))
                         {
-                            Console.WriteLine($"id: {item.id}, Titulo: {item.title} repetido");
+                            Console.WriteLine($"Titulo: {item.Title} repetido");
                             continue;
                         }
                         else
                         {
-                            idList.Add(System.Tuple.Create(item.id, item.title));
+                            idList.Add(item.Title);
                             //Thread.Sleep(500);
                         }
 
 
-                        string title = item.title.ToLower().Replace(" ", "-")
-                                                           .Replace(".", "")
-                                                           .Replace("+", "")
-                                                           .Replace(",", "")
-                                                           .Replace(";", "")
-                                                           .Replace(":", "")
-                                                           .Replace("!", "")
-                                                           .Replace("?", "")
-                                                           .Replace("/", "")
-                                                           .Replace("ç", "c")
-                                                           .Replace("ã", "a")
-                                                           .Replace("õ", "o")
-                                                           .Replace("á", "a")
-                                                           .Replace("é", "e")
-                                                           .Replace("í", "i")
-                                                           .Replace("ó", "o")
-                                                           .Replace("ú", "u")
-                                                           .Replace("à", "a")
-                                                           .Replace("è", "e")
-                                                           .Replace("ì", "i")
-                                                           .Replace("ò", "o")
-                                                           .Replace("ù", "u")
-                                                           .Replace("â", "a")
-                                                           .Replace("ê", "e")
-                                                           .Replace("î", "i")
-                                                           .Replace("ô", "o")
-                                                           .Replace("û", "u")
-                                                           .Replace("[editado-pelo-reclame-aqui]", "");
-                        title = title.Length == 0 ? title : title.Last() == '-' ? title.Substring(0, title.Length - 1) : title;
-                        string url = $"https://www.reclameaqui.com.br/live-tim/{title}_{item.id}/";
-
+                        //string title = item.title.ToLower().Replace(" ", "-")
+                        //                                   .Replace(".", "")
+                        //                                   .Replace("+", "")
+                        //                                   .Replace(",", "")
+                        //                                   .Replace(";", "")
+                        //                                   .Replace(":", "")
+                        //                                   .Replace("!", "")
+                        //                                   .Replace("?", "")
+                        //                                   .Replace("/", "")
+                        //                                   .Replace("ç", "c")
+                        //                                   .Replace("ã", "a")
+                        //                                   .Replace("õ", "o")
+                        //                                   .Replace("á", "a")
+                        //                                   .Replace("é", "e")
+                        //                                   .Replace("í", "i")
+                        //                                   .Replace("ó", "o")
+                        //                                   .Replace("ú", "u")
+                        //                                   .Replace("à", "a")
+                        //                                   .Replace("è", "e")
+                        //                                   .Replace("ì", "i")
+                        //                                   .Replace("ò", "o")
+                        //                                   .Replace("ù", "u")
+                        //                                   .Replace("â", "a")
+                        //                                   .Replace("ê", "e")
+                        //                                   .Replace("î", "i")
+                        //                                   .Replace("ô", "o")
+                        //                                   .Replace("û", "u")
+                        //                                   .Replace("[editado-pelo-reclame-aqui]", "");
+                        //title = title.Length == 0 ? title : title.Last() == '-' ? title.Substring(0, title.Length - 1) : title;
+                        string url = $"https://www.reclameaqui.com.br{item.Url}";
+                        //Console.WriteLine($"{DateTime.Now} - Page: {(int)i / 10} - Item:{index++} - Url:{url}");
                         Stopwatch sw = Stopwatch.StartNew();
                         var entity = await ProcessPage(url);
                         sw.Stop();
 
 
-                      
                         if (_timRepository.Exists(entity))
                             await _timRepository.ReplaceOne(entity);
                         else
@@ -228,50 +235,9 @@ namespace ReclameAqui.Scrapper.Service.Services
                         response.EnsureSuccessStatusCode();
                         string paginateString = await response.Content.ReadAsStringAsync();
 
-                        string json = paginateString.Substring(paginateString.LastIndexOf("</div>"));
-                        json = json.Substring(json.IndexOf("{\"complaint\""));
-                        json = json.Substring(0, json.IndexOf(",\"__N_SSP\":"));
-
-                        ReclameAquiEntity? entity = JsonConvert.DeserializeObject<ReclameAquiEntity>(json);
-                        
-                        if(entity is null)
-                            throw new Exception("Erro ao deserializar objeto");
-                        if(entity.complaint is null)
-                            throw new Exception("Erro ao deserializar objeto");
-                         if(entity.complaint.legacyId is null)
-                            throw new Exception("Erro ao deserializar objeto");
-                        
-                        entity.Id = entity.complaint.legacyId.Value;
-                        
-                        return new TimEntity()
-                        {
-                            Categoria = entity.category is null ? null : entity.category.name,
-                            Data = entity.complaint.created,
-
-                            Descricao =  HtmlUtil.ConvertToPlainText(entity.complaint.description),
-                            Id = entity.complaint.legacyId.Value,
-                            Interacoes = (entity.complaint.interactions is not null && entity.complaint.interactions.Any()) 
-                                ? entity.complaint.interactions.Select(x => new Interacoes()
-                                    {
-                                        DataInteracao = x.created,
-                                        TextoInteracao = HtmlUtil.ConvertToPlainText(x.message),
-                                        TipoInteracao = x.type,
-                                    }) 
-                                : null,
-                            Localizacao = entity.complaint.userCity,
-                            Nota = entity.complaint.score,
-                            Problema = entity.problemType is null ? null : entity.problemType.name,
-                            Produto = entity.productType is null ? null : entity.productType.name,
-                            Resolvido = entity.complaint.solved,
-                            Titulo = entity.complaint.title,
-                            VoltariaNegocio = entity.complaint.dealAgain,
-                            Avaliada = entity.complaint.evaluated,
-                            Status = entity.complaint.status,
-                        };
+                        return ParserComplaint(paginateString);
                     }
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -279,7 +245,7 @@ namespace ReclameAqui.Scrapper.Service.Services
             }
         }
 
-        private async Task<ReclameAquiPagination> ProcessPaginatedPage(string url, bool redo = true)
+        private async Task<IEnumerable<ReclameAquiPagination>> ProcessPaginatedPage(string url, bool redo = true)
         {
             try
             {
@@ -299,12 +265,8 @@ namespace ReclameAqui.Scrapper.Service.Services
 
                         response.EnsureSuccessStatusCode();
                         string paginateString = await response.Content.ReadAsStringAsync();
-                        string json = paginateString.Substring(paginateString.LastIndexOf("</div>"));
-                        if (json.IndexOf("\"complaints\":{") == -1)
-                            return null;
-                        json = json.Substring(json.IndexOf("\"complaints\":{") + 13);
-                        json = json.Substring(0, json.IndexOf(",\"mediaKit\""));
-                        return JsonConvert.DeserializeObject<ReclameAquiPagination>(json);
+
+                        return ParserPaginated(paginateString);
                     }
                 }
             }
@@ -316,5 +278,192 @@ namespace ReclameAqui.Scrapper.Service.Services
             }
         }
 
+
+
+        private IEnumerable<ReclameAquiPagination> ParserPaginated(string webPage)
+        {
+            int firstIndex = 0;
+            int validIndex = 0;
+            int lastIndex = 0;
+            List<ReclameAquiPagination> listItens = new List<ReclameAquiPagination>();
+            while (validIndex != -1)
+            {
+                firstIndex = webPage.IndexOf("class=\"sc-1pe7b5t-0 bJdtis\"", firstIndex) + 28;
+                lastIndex = webPage.IndexOf("</h4>", firstIndex);
+                string item = webPage.Substring(firstIndex, lastIndex - firstIndex);
+
+                int startLink = item.IndexOf("href=\"") + 6;
+                int lastLink = item.IndexOf("\"", startLink);
+                string link = item.Substring(startLink, lastLink - startLink);
+
+                int startTitle = item.IndexOf("class=\"sc-1pe7b5t-1 fTrwHU\">") + 28;
+                string title = item.Substring(startTitle);
+
+
+                listItens.Add(new ReclameAquiPagination() { Title = title, Url = link });
+                validIndex = webPage.IndexOf("class=\"sc-1pe7b5t-0 bJdtis\"", firstIndex);
+            }
+
+            return listItens;
+        }
+
+        private TimEntity ParserComplaint(string webPage)
+        {
+            string original = webPage;
+            try
+            {
+
+                int bodyIndex = webPage.IndexOf("<body>");
+                webPage = webPage.Substring(bodyIndex);
+
+                int titleStart = webPage.IndexOf("complaint-title") + 41;
+                int titleEnd = webPage.IndexOf("</h1>", titleStart);
+                string title = webPage.Substring(titleStart, titleEnd - titleStart);
+
+                int statusStart = webPage.IndexOf("sc-1a60wwz-1") + 21;
+                int statusEnd = webPage.IndexOf("</span>", statusStart);
+                string status = webPage.Substring(statusStart, statusEnd - statusStart);
+
+                int locationStart = webPage.IndexOf("complaint-location") + 20;
+                int locationEnd = webPage.IndexOf("</span>", locationStart);
+                string location = webPage.Substring(locationStart, locationEnd - locationStart);
+
+                int creationDateStart = webPage.IndexOf("complaint-creation-date") + 25;
+                int creationDateEnd = webPage.IndexOf("</span>", creationDateStart);
+                string creationDate = webPage.Substring(creationDateStart, creationDateEnd - creationDateStart).Replace(" às", "");
+
+                int idStart = webPage.IndexOf("<b>ID:</b>") + 11;
+                int idEnd = webPage.IndexOf("</span>", idStart);
+                string id = webPage.Substring(idStart, idEnd - idStart);
+
+
+                string categoria = string.Empty;
+                int categoriaStart = webPage.IndexOf("listitem-categoria");
+                if (categoriaStart != -1)
+                {
+                    int categoriaEnd = webPage.IndexOf("</a></div>", categoriaStart);
+                    categoria = webPage.Substring(categoriaStart, categoriaEnd - categoriaStart);
+                    categoriaStart = categoria.LastIndexOf(">") + 1;
+                    categoria = categoria.Substring(categoriaStart);
+                }
+
+                string produto = string.Empty;
+                int produtoStart = webPage.IndexOf("listitem-produto");
+                if (produtoStart != -1)
+                {
+                    int produtoEnd = webPage.IndexOf("</a></div>", produtoStart);
+                    produto = webPage.Substring(produtoStart, produtoEnd - produtoStart);
+                    produtoStart = produto.LastIndexOf(">") + 1;
+                    produto = produto.Substring(produtoStart);
+                }
+
+
+                string problema = string.Empty;
+                int problemaStart = webPage.IndexOf("listitem-problema");
+                if (problemaStart != -1)
+                {
+                    int problemaEnd = webPage.IndexOf("</a></div>", problemaStart);
+                    problema = webPage.Substring(problemaStart, problemaEnd - problemaStart);
+                    problemaStart = problema.LastIndexOf(">") + 1;
+                    problema = problema.Substring(problemaStart);
+                }
+
+
+                int descricaoStart = webPage.IndexOf("lzlu7c-17 fXwQIB") + 18;
+                int descricaoEnd = webPage.IndexOf("</p>", descricaoStart);
+                string descricao = webPage.Substring(descricaoStart, descricaoEnd - descricaoStart);
+
+                List<Interacoes> interacoes = new();
+                string complaintInteraction = webPage;
+                bool willBreak = false;
+                while (!willBreak)
+                {
+                    int answerStart = complaintInteraction.IndexOf("complaint-interaction\"") + 21;
+                    if (answerStart == 20)
+                    {
+                        break;
+                    }
+                    int nextAnswerStart = complaintInteraction.IndexOf("complaint-interaction\"", answerStart);
+
+                    complaintInteraction = complaintInteraction.Substring(answerStart);
+
+                    int interactionTypeStart = complaintInteraction.IndexOf("div type=\"") + 10;
+                    int interactionTypeEnd = complaintInteraction.IndexOf("\"", interactionTypeStart);
+                    string interactionType = complaintInteraction.Substring(interactionTypeStart, interactionTypeEnd - interactionTypeStart);
+
+                    int interactionDateStart = complaintInteraction.IndexOf("sc-1o3atjt-3 ipwWvs\">") + 21;
+                    int interactionDateEnd = complaintInteraction.IndexOf("</span>", interactionDateStart);
+                    string interactionDate = complaintInteraction.Substring(interactionDateStart, interactionDateEnd - interactionDateStart).Replace(" às", "");
+
+                    int interactionStart = complaintInteraction.IndexOf("sc-1o3atjt-4 JkSWX\">") + 20;
+                    int interactionEnd = complaintInteraction.IndexOf("</p>", interactionStart);
+                    string interaction = complaintInteraction.Substring(interactionStart, interactionEnd - interactionStart);
+
+                    interacoes.Add(new Interacoes()
+                    {
+                        TipoInteracao = interactionType,
+                        DataInteracao = DateTime.ParseExact(interactionDate, "dd/MM/yyyy HH:mm", null),
+                        TextoInteracao = interaction
+                    });
+                    if (nextAnswerStart == -1)
+                        willBreak = true;
+                    else
+                        complaintInteraction = complaintInteraction.Substring(nextAnswerStart - answerStart);
+
+                }
+
+                bool skip = false;
+                string resolvido = string.Empty;
+                string negocio = string.Empty;
+                string nota = string.Empty;
+                int resolvidoStart = webPage.IndexOf("sc-1a60wwz-1 gfOjuF\">") + 21;
+                if (resolvidoStart == 20) skip = true;
+                else
+                {
+                    int resolvidoEnd = webPage.IndexOf("</span><", resolvidoStart);
+                    resolvido = webPage.Substring(resolvidoStart, resolvidoEnd - resolvidoStart);
+                }
+
+
+                if (!skip)
+                {
+                    int negocioStart = webPage.IndexOf("uh4o7z-3 uh4o7z-4 ceUcTc ezNHIi\">") + 33;
+                    int negocioEnd = webPage.IndexOf("</div>", negocioStart);
+                    negocio = webPage.Substring(negocioStart, negocioEnd - negocioStart);
+                }
+
+                if (!skip)
+                {
+                    int notaStart = webPage.IndexOf("uh4o7z-3 ceUcTc\">") + 17;
+                    int notaEnd = webPage.IndexOf("</div>", notaStart);
+                    nota = webPage.Substring(notaStart, notaEnd - notaStart);
+                }
+
+
+                return new TimEntity()
+                {
+                    Titulo = title,
+                    Status = status,
+                    Localizacao = location,
+                    Data = DateTime.ParseExact(creationDate, "dd/MM/yyyy HH:mm", null),
+                    Id = int.Parse(id),
+                    Categoria = categoria == string.Empty ? null : categoria,
+                    Problema = problema == string.Empty ? null : problema,
+                    Produto = produto == string.Empty ? null : produto,
+                    Descricao = HtmlUtil.ConvertToPlainText(descricao),
+                    Interacoes = interacoes.Any() ? interacoes : null,
+                    Resolvido = skip ? null : resolvido == "Resolvido",
+                    VoltariaNegocio = skip ? null : negocio == "Sim",
+                    Nota = skip ? null : Int32.Parse(nota)
+                };
+            }
+            catch (Exception ex)
+            {
+                //ParserComplaint(original);
+                throw ex;
+            }
+
+
+        }
     }
 }

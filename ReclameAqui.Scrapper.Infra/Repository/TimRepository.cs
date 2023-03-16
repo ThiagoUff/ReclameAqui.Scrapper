@@ -10,7 +10,7 @@ namespace ReclameAqui.Scrapper.Infra.Repository
         private readonly IMongoCollection<TimEntity> _db;
         public TimRepository()
         {
-            MongoClient client = new ("mongodb://localhost:27017");
+            MongoClient client = new ("mongodb+srv://usr_master:usr_master@cluster0.ay4a5.mongodb.net/test");
             IMongoDatabase database = client.GetDatabase("ReclameAqui");
             _db = database.GetCollection<TimEntity>("Tim");
         }

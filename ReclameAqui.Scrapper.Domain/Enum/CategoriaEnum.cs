@@ -9,6 +9,8 @@ namespace ReclameAqui.Scrapper.Domain.Enum
 {
     public enum CategoriaEnum
     {
+        [Description("")]
+        NA = -1,
         [Description("0000000000000069")]
         Prov_serv_internet = 0,
 

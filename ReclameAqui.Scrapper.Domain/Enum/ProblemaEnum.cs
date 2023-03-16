@@ -4,6 +4,8 @@ namespace ReclameAqui.Scrapper.Domain.Enum
 {
     public enum ProblemaEnum
     {
+        [Description("")]
+        NA = -1,
         [Description("0000000000000872")]
         Qualidade_Da_Internet = 0,
 
