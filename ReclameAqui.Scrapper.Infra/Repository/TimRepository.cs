@@ -7,39 +7,39 @@ namespace ReclameAqui.Scrapper.Infra.Repository
 {
     public class TimRepository : ITimRepository
     {
-        private readonly IMongoCollection<TimEntity> _db;
+        private readonly IMongoCollection<ReclameAquiEntity> _db;
         public TimRepository()
         {
             MongoClient client = new ("mongodb+srv://usr_master:usr_master@cluster0.ay4a5.mongodb.net/test");
             IMongoDatabase database = client.GetDatabase("ReclameAqui");
-            _db = database.GetCollection<TimEntity>("Tim");
+            _db = database.GetCollection<ReclameAquiEntity>("TimCelular");
         }
 
-        public async Task InsertOne(TimEntity entity) 
+        public async Task InsertOne(ReclameAquiEntity entity) 
         {
             await _db.InsertOneAsync(entity);
         }
-        public async Task<TimEntity> FindOne(int id)
+        public async Task<ReclameAquiEntity> FindOne(int id)
         {
-            return await _db.Find(Builders<TimEntity>.Filter.Eq("_id", id)).FirstOrDefaultAsync();
+            return await _db.Find(Builders<ReclameAquiEntity>.Filter.Eq("_id", id)).FirstOrDefaultAsync();
         }
-        public async Task<IEnumerable<TimEntity>> GetAll()
+        public async Task<IEnumerable<ReclameAquiEntity>> GetAll()
         {
             return (await _db.FindAsync(new BsonDocument())).ToEnumerable();
         }
-        public bool Exists(TimEntity entity)
+        public bool Exists(ReclameAquiEntity entity)
         {
-            return _db.Find(Builders<TimEntity>.Filter.Eq("_id", entity.Id)).Any();
+            return _db.Find(Builders<ReclameAquiEntity>.Filter.Eq("_id", entity.Id)).Any();
         }
 
         public async Task DeleteOne(int id) 
         {
-            await _db.DeleteOneAsync(Builders<TimEntity>.Filter.Eq("_id", id));
+            await _db.DeleteOneAsync(Builders<ReclameAquiEntity>.Filter.Eq("_id", id));
         }
 
-        public async Task ReplaceOne(TimEntity entity)
+        public async Task ReplaceOne(ReclameAquiEntity entity)
         {
-            await _db.ReplaceOneAsync(Builders<TimEntity>.Filter.Eq("_id", entity.Id), entity);
+            await _db.ReplaceOneAsync(Builders<ReclameAquiEntity>.Filter.Eq("_id", entity.Id), entity);
         }
     }
 }

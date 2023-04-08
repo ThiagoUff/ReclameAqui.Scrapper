@@ -5,10 +5,10 @@ namespace ReclameAqui.Scrapper.Domain.Interfaces.Repository
     public interface ITimRepository
     {
         Task DeleteOne(int id);
-        bool Exists(TimEntity entity);
-        Task<TimEntity> FindOne(int id);
-        Task<IEnumerable<TimEntity>> GetAll();
-        Task InsertOne(TimEntity entity);
-        Task ReplaceOne(TimEntity entity);
+        bool Exists(ReclameAquiEntity entity);
+        Task<ReclameAquiEntity> FindOne(int id);
+        Task<IEnumerable<ReclameAquiEntity>> GetAll();
+        Task InsertOne(ReclameAquiEntity entity);
+        Task ReplaceOne(ReclameAquiEntity entity);
     }
 }

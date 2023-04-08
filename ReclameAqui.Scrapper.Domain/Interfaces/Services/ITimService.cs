@@ -3,6 +3,7 @@
     public interface ITimService
     {
         Task ExtractInfo();
-        Task Scrapper();
+        Task ScrapperLiveTim();
+        Task ScrapperTimCelular();
     }
 }

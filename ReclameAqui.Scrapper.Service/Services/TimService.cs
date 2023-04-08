@@ -16,17 +16,19 @@ namespace ReclameAqui.Scrapper.Service.Services
     public class TimService : ITimService
     {
         private readonly ITimRepository _timRepository;
-        private readonly IReclameAquiRepository _reclameAquiRepository;
+        private readonly ILiveTimRepository _liveTimRepository;
+        private int _totalUpdate = 0;
+        private int _totalInsert = 0;
         public TimService(ITimRepository timRepository,
-                          IReclameAquiRepository reclameAquiRepository)
+                          ILiveTimRepository liveTimRepository)
         {
             _timRepository = timRepository;
-            _reclameAquiRepository = reclameAquiRepository;
+            _liveTimRepository = liveTimRepository;
         }
 
         public async Task ExtractInfo()
         {
-            IEnumerable<TimEntity> listaRA = await _timRepository.GetAll();
+            IEnumerable<ReclameAquiEntity> listaRA = await _timRepository.GetAll();
 
             IXLWorkbook workbook = new XLWorkbook();
             IXLWorksheet worksheet = workbook.Worksheets.Add("data");
@@ -49,69 +51,88 @@ namespace ReclameAqui.Scrapper.Service.Services
             csv.AppendLine($"Id,Titulo,Data,Localizacao,Categoria,Problema,Produto,Descricao,Status,Resolvido,Avaliada,VoltariaNegocio,Nota");
 
             int index = 2;
-            foreach (TimEntity item in listaRA)
+            foreach (ReclameAquiEntity item in listaRA)
             {
+                string cat = item.Categoria == null ? "NA" : item.Categoria;
+                string prob = item.Problema == null ? "NA" : item.Problema;
+                string prod = item.Produto == null ? "NA" : item.Produto;
+
                 worksheet.Cell(index, 1).Value = $"{item.Id}";
                 worksheet.Cell(index, 2).Value = $"{item.Titulo}";
                 worksheet.Cell(index, 3).Value = $"{item.Data}";
                 worksheet.Cell(index, 4).Value = $"{item.Localizacao}";
-                worksheet.Cell(index, 5).Value = $"{item.Categoria}";
-                worksheet.Cell(index, 6).Value = $"{item.Problema}";
-                worksheet.Cell(index, 7).Value = $"{item.Produto}";
-                worksheet.Cell(index, 8).Value = $"{item.Descricao}";
-                worksheet.Cell(index, 9).Value = $"{item.Status}";
+                worksheet.Cell(index, 5).Value = $"{cat.Replace('ā', 'a')}";
+                worksheet.Cell(index, 6).Value = $"{prob.Replace('ā', 'a')}";
+                worksheet.Cell(index, 7).Value = $"{prod.Replace('ā', 'a')}";
+                worksheet.Cell(index, 8).Value = $"{item.Descricao.Replace('ā', 'a')}";
+                worksheet.Cell(index, 9).Value = $"{item.Status.Replace('ā', 'a')}";
                 worksheet.Cell(index, 10).Value = $"{item.Resolvido}";
                 worksheet.Cell(index, 11).Value = $"{item.Avaliada}";
                 worksheet.Cell(index, 12).Value = $"{item.VoltariaNegocio}";
                 worksheet.Cell(index, 13).Value = $"{item.Nota}";
                 index++;
 
-                csv.AppendLine($"{item.Id},{item.Titulo},{item.Data},{item.Localizacao},{item.Categoria},{item.Problema},{item.Produto},{item.Descricao},{item.Status},{item.Resolvido},{item.Avaliada},{item.VoltariaNegocio},{item.Nota}");
+                csv.AppendLine($"{item.Id},{item.Titulo},{item.Data},{item.Localizacao},{cat},{prob},{prod},{item.Descricao},{item.Status},{item.Resolvido},{item.Avaliada},{item.VoltariaNegocio},{item.Nota}");
             }
             File.WriteAllText(@"..//dataset.csv", csv.ToString());
-            workbook.SaveAs(@"dataset.xlsx");
+
+            workbook.SaveAs(@"..//LiveTimRA.xlsx");
         }
 
-        public async Task Scrapper()
+        public async Task ScrapperLiveTim()
         {
+            IEnumerable<EProblemaEnum> problemas = Enum.GetValues(typeof(EProblemaEnum)).Cast<EProblemaEnum>();
+            IEnumerable<ECategoriaEnum> categorias = Enum.GetValues(typeof(ECategoriaEnum)).Cast<ECategoriaEnum>();
+            IEnumerable<EProdutosEnum> produtos = Enum.GetValues(typeof(EProdutosEnum)).Cast<EProdutosEnum>();
+            IEnumerable<EStatusEnum> statusList = Enum.GetValues(typeof(EStatusEnum)).Cast<EStatusEnum>();
 
-
-            //var xpto = await ProcessPaginatedPage("https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina=1&status=NOT_ANSWERED&categoria=000000000000006&produto=0000000000000476&problema=0000000000000078");
-            IEnumerable<ProblemaEnum> problemas = Enum.GetValues(typeof(ProblemaEnum)).Cast<ProblemaEnum>();
-            IEnumerable<CategoriaEnum> categorias = Enum.GetValues(typeof(CategoriaEnum)).Cast<CategoriaEnum>();
-            IEnumerable<ProdutosEnum> produtos = Enum.GetValues(typeof(ProdutosEnum)).Cast<ProdutosEnum>();
-            IEnumerable<StatusEnum> statusList = Enum.GetValues(typeof(StatusEnum)).Cast<StatusEnum>();
-
-            //await ProcessLink("EVALUATED", "", "", "");
-            foreach (var status in statusList)
+            await Parallel.ForEachAsync(statusList, new ParallelOptions() { MaxDegreeOfParallelism = 1 }, async (status, cancelationToken) =>
             {
-
                 foreach (var problema in problemas)
                 {
                     foreach (var categoria in categorias)
                     {
-                        //Parallel.ForEach(produtos, new ParallelOptions() { MaxDegreeOfParallelism = 2 }, async produto =>
-                        //{
-                        //    await ProcessLink(status.GetEnumDescription(), problema.GetEnumDescription(), categoria.GetEnumDescription(), produto.GetEnumDescription());
-                        //});
                         foreach (var produto in produtos)
                         {
-                            await ProcessLink(status.GetEnumDescription(), problema.GetEnumDescription(), categoria.GetEnumDescription(), produto.GetEnumDescription());
+                            await ProcessLink(status.GetEnumDescription(), problema.GetEnumDescription(), categoria.GetEnumDescription(), produto.GetEnumDescription(), ECompanyEnum.LiveTim);
                         }
                     }
                 }
-            }
-
+            });
         }
 
-        private async Task ProcessLink(string status, string problema, string categoria, string produto)
+        public async Task ScrapperTimCelular()
+        {
+            IEnumerable<EProblemaTimEnum> problemas = Enum.GetValues(typeof(EProblemaTimEnum)).Cast<EProblemaTimEnum>();
+            IEnumerable<ECategoriaTimEnum> categorias = Enum.GetValues(typeof(ECategoriaTimEnum)).Cast<ECategoriaTimEnum>();
+            IEnumerable<EProdutosTimEnum> produtos = Enum.GetValues(typeof(EProdutosTimEnum)).Cast<EProdutosTimEnum>();
+            IEnumerable<EStatusEnum> statusList = Enum.GetValues(typeof(EStatusEnum)).Cast<EStatusEnum>();
+
+            await Parallel.ForEachAsync(statusList, new ParallelOptions() { MaxDegreeOfParallelism = 2 }, async (status, cancelationToken) =>
+            {
+                foreach (var problema in problemas)
+                {
+                    foreach (var categoria in categorias)
+                    {
+                        foreach (var produto in produtos)
+                        {
+                            await ProcessLink(status.GetEnumDescription(), problema.GetEnumDescription(), categoria.GetEnumDescription(), produto.GetEnumDescription(), ECompanyEnum.TimCelular);
+                        }
+                    }
+                }
+            });
+        }
+
+
+        private async Task ProcessLink(string status, string problema, string categoria, string produto, ECompanyEnum company)
         {
             List<string> idList = new();
-            int limit = 100000;
+            //int limit = 100000;
             IEnumerable<ReclameAquiPagination> items;
-
-            for (int i = 1; i < limit; i += 10)
+            for (int i = 1; ; i += 10)
+            //while(true)
             {
+
                 ReclameAquiPagination paginate;
                 try
                 {
@@ -120,91 +141,61 @@ namespace ReclameAqui.Scrapper.Service.Services
                     string cat = categoria == "" ? "" : $"categoria={categoria}";
                     string prod = produto == "" ? "" : $"produto={produto}";
                     string prob = problema == "" ? "" : $"problema={problema}";
-                    //string url = $"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}&status={status}&categoria={categoria}&produto={produto}&problema={problema}";
-                    string url = $"https://www.reclameaqui.com.br/empresa/live-tim/lista-reclamacoes/?pagina={i}&{stat}&{cat}&{prod}&{prob}";
+                    string url = $"https://www.reclameaqui.com.br/empresa/{company.GetEnumDescription()}/lista-reclamacoes/?pagina={i}&{stat}&{cat}&{prod}&{prob}";
                     items = await ProcessPaginatedPage(url);
                     sw.Stop();
                     Console.WriteLine($"{DateTime.Now} - Tempo para obter pagina {url}  de reclamações: {sw.Elapsed}");
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex);
                     continue;
                 }
 
                 if (!items.Any())
                     break;
-                //IEnumerable<PageItens> items;
-                //if (paginate.LAST is not null)
-                //    items = paginate.LAST;
-                //else if (paginate.NOT_ANSWERED is not null)
-                //    items = paginate.NOT_ANSWERED;
-                //else if (paginate.ANSWERED is not null)
-                //    items = paginate.ANSWERED;
-                //else if (paginate.EVALUATED is not null)
-                //    items = paginate.EVALUATED;
-                //else
-                //    break;
-                //;
 
                 int index = 0;
                 foreach (var item in items)
                 {
                     try
                     {
-                        if (idList.Contains(item.Title))
-                        {
-                            Console.WriteLine($"Titulo: {item.Title} repetido");
-                            continue;
-                        }
-                        else
-                        {
-                            idList.Add(item.Title);
-                            //Thread.Sleep(500);
-                        }
-
-
-                        //string title = item.title.ToLower().Replace(" ", "-")
-                        //                                   .Replace(".", "")
-                        //                                   .Replace("+", "")
-                        //                                   .Replace(",", "")
-                        //                                   .Replace(";", "")
-                        //                                   .Replace(":", "")
-                        //                                   .Replace("!", "")
-                        //                                   .Replace("?", "")
-                        //                                   .Replace("/", "")
-                        //                                   .Replace("ç", "c")
-                        //                                   .Replace("ã", "a")
-                        //                                   .Replace("õ", "o")
-                        //                                   .Replace("á", "a")
-                        //                                   .Replace("é", "e")
-                        //                                   .Replace("í", "i")
-                        //                                   .Replace("ó", "o")
-                        //                                   .Replace("ú", "u")
-                        //                                   .Replace("à", "a")
-                        //                                   .Replace("è", "e")
-                        //                                   .Replace("ì", "i")
-                        //                                   .Replace("ò", "o")
-                        //                                   .Replace("ù", "u")
-                        //                                   .Replace("â", "a")
-                        //                                   .Replace("ê", "e")
-                        //                                   .Replace("î", "i")
-                        //                                   .Replace("ô", "o")
-                        //                                   .Replace("û", "u")
-                        //                                   .Replace("[editado-pelo-reclame-aqui]", "");
-                        //title = title.Length == 0 ? title : title.Last() == '-' ? title.Substring(0, title.Length - 1) : title;
                         string url = $"https://www.reclameaqui.com.br{item.Url}";
-                        //Console.WriteLine($"{DateTime.Now} - Page: {(int)i / 10} - Item:{index++} - Url:{url}");
                         Stopwatch sw = Stopwatch.StartNew();
                         var entity = await ProcessPage(url);
                         sw.Stop();
 
+                        if(company == ECompanyEnum.LiveTim) {
+                            if (_timRepository.Exists(entity))
+                            {
+                                await _liveTimRepository.ReplaceOne(entity);
+                                _totalUpdate++;
+                            }
 
-                        if (_timRepository.Exists(entity))
-                            await _timRepository.ReplaceOne(entity);
+                            else
+                            {
+                                await _liveTimRepository.InsertOne(entity);
+                                _totalInsert++;
+                            }
+                        }
                         else
-                            await _timRepository.InsertOne(entity);
+                        {
+                            if (_timRepository.Exists(entity))
+                            {
+                                await _timRepository.ReplaceOne(entity);
+                                _totalUpdate++;
+                            }
 
-                        Console.WriteLine($"{DateTime.Now} - Page: {(int)i / 10} - Item:{index++} - Data:{entity.Data} - ID: {entity.Id} - Elapse page: {sw.Elapsed} - Url:{url}");
+                            else
+                            {
+                                await _timRepository.InsertOne(entity);
+                                _totalInsert++;
+                            }
+                        }
+
+
+
+                        Console.WriteLine($"{DateTime.Now} - TotalInsert: {_totalInsert} - TotalUpdate: {_totalUpdate} - Page: {(int)i / 10} - Item:{index++} - Elapse page: {sw.Elapsed} - Url:{url}");
 
                     }
                     catch (Exception ex)
@@ -215,7 +206,7 @@ namespace ReclameAqui.Scrapper.Service.Services
             }
         }
 
-        private async Task<TimEntity> ProcessPage(string url)
+        private async Task<ReclameAquiEntity> ProcessPage(string url)
         {
             try
             {
@@ -306,7 +297,7 @@ namespace ReclameAqui.Scrapper.Service.Services
             return listItens;
         }
 
-        private TimEntity ParserComplaint(string webPage)
+        private ReclameAquiEntity ParserComplaint(string webPage)
         {
             string original = webPage;
             try
@@ -402,7 +393,7 @@ namespace ReclameAqui.Scrapper.Service.Services
                     {
                         TipoInteracao = interactionType,
                         DataInteracao = DateTime.ParseExact(interactionDate, "dd/MM/yyyy HH:mm", null),
-                        TextoInteracao = interaction
+                        TextoInteracao = HtmlUtil.ConvertToPlainText(interaction),
                     });
                     if (nextAnswerStart == -1)
                         willBreak = true;
@@ -439,7 +430,7 @@ namespace ReclameAqui.Scrapper.Service.Services
                 }
 
 
-                return new TimEntity()
+                return new ReclameAquiEntity()
                 {
                     Titulo = title,
                     Status = status,

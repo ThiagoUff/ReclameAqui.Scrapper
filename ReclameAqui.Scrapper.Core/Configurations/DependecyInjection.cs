@@ -3,12 +3,7 @@ using ReclameAqui.Scrapper.Domain.Interfaces.Repository;
 using ReclameAqui.Scrapper.Domain.Interfaces.Services;
 using ReclameAqui.Scrapper.Infra.Repository;
 using ReclameAqui.Scrapper.Service.Services;
-using Refit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ReclameAqui.Scrapper.Core.Configurations
 {
@@ -16,8 +11,8 @@ namespace ReclameAqui.Scrapper.Core.Configurations
     {
         public static void AddDependencyInjections(this IServiceCollection services)
         {
+            services.AddTransient<ILiveTimRepository, LiveTimRepository>();
             services.AddTransient<ITimRepository, TimRepository>();
-            services.AddTransient<IReclameAquiRepository, ReclameAquiRepository>();
             services.AddTransient<ITimService, TimService>();
         }
     }
