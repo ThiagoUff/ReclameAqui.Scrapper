@@ -1,0 +1,372 @@
+[
+    {
+        "name": "Propaganda Enganosa",
+        "id": "0000000000001195",
+        "companyShortname": null,
+        "count": 29445,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cadastro e Assinatura",
+        "id": "0000000000000247",
+        "companyShortname": null,
+        "count": 3591,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pagamentos eletrônicos",
+        "id": "0000000000000989",
+        "companyShortname": null,
+        "count": 3258,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Conteúdo",
+        "id": "0000000000001523",
+        "companyShortname": null,
+        "count": 3081,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cartão de crédito",
+        "id": "0000000000000025",
+        "companyShortname": null,
+        "count": 1461,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Outro Tipo de produto/Serviço",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 1452,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Software",
+        "id": "0000000000000782",
+        "companyShortname": null,
+        "count": 1333,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Anúncio",
+        "id": "0000000000001521",
+        "companyShortname": null,
+        "count": 1250,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas Gerais",
+        "id": "0000000000001409",
+        "companyShortname": null,
+        "count": 438,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Recuperadora de créditos-Cobranças",
+        "id": "0000000000000680",
+        "companyShortname": null,
+        "count": 376,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Aparelhos",
+        "id": "0000000000000990",
+        "companyShortname": null,
+        "count": 149,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Administrativo",
+        "id": "0000000000001131",
+        "companyShortname": null,
+        "count": 143,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Financeiras",
+        "id": "0000000000000030",
+        "companyShortname": null,
+        "count": 33,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Múltiplo (Débito e crédito)",
+        "id": "0000000000000027",
+        "companyShortname": null,
+        "count": 33,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Agência de Comunicação e Marketing",
+        "id": "0000000000001323",
+        "companyShortname": null,
+        "count": 31,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pagamentos e Documentos",
+        "id": "0000000000001370",
+        "companyShortname": null,
+        "count": 20,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Canais de Atendimento",
+        "id": "0000000000001129",
+        "companyShortname": null,
+        "count": 16,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Instrutor",
+        "id": "0000000000001332",
+        "companyShortname": null,
+        "count": 15,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "consultorias",
+        "id": "0000000000000687",
+        "companyShortname": null,
+        "count": 14,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Consultoria Financeira",
+        "id": "0000000000001292",
+        "companyShortname": null,
+        "count": 11,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sites e portais",
+        "id": "0000000000000480",
+        "companyShortname": null,
+        "count": 6,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Moeda em espécie",
+        "id": "0000000000000986",
+        "companyShortname": null,
+        "count": 5,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Equipe de Atendimento",
+        "id": "0000000000001197",
+        "companyShortname": null,
+        "count": 4,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Equipamentos",
+        "id": "0000000000001167",
+        "companyShortname": null,
+        "count": 4,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Conta",
+        "id": "0000000000000910",
+        "companyShortname": null,
+        "count": 3,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produtos",
+        "id": "0000000000001170",
+        "companyShortname": null,
+        "count": 2,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Area do Aluno",
+        "id": "0000000000001136",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Navegabilidade",
+        "id": "0000000000001194",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Assistência técnica e Garantia",
+        "id": "0000000000001122",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Internet para tablet",
+        "id": "0000000000000477",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Acesso ao Cadastro",
+        "id": "0000000000001193",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Seguros de equipamentos eletrônicos",
+        "id": "0000000000001299",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Consultoria Jurídica",
+        "id": "0000000000001293",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cartão",
+        "id": "0000000000001349",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Planos pré-pagos",
+        "id": "0000000000000473",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Jogos",
+        "id": "0000000000000582",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Assistência técnica",
+        "id": "0000000000000470",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]

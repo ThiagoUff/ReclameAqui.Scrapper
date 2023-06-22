@@ -1,0 +1,492 @@
+[
+    {
+        "name": "Aplicativos",
+        "id": "0000000000000311",
+        "companyShortname": null,
+        "count": 274098,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Delivery Alimentação",
+        "id": "0000000000000298",
+        "companyShortname": null,
+        "count": 252474,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não encontrei meu problema",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 74392,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com o Atendimento",
+        "id": "0000000000000255",
+        "companyShortname": null,
+        "count": 36025,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com o Site",
+        "id": "0000000000000259",
+        "companyShortname": null,
+        "count": 17930,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não categorizado",
+        "id": "-000000000000001",
+        "companyShortname": null,
+        "count": 16133,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Redes de fast food",
+        "id": "0000000000000157",
+        "companyShortname": null,
+        "count": 12835,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Meios de pagamentos eletrônicos",
+        "id": "0000000000000135",
+        "companyShortname": null,
+        "count": 6522,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Restaurantes",
+        "id": "0000000000000036",
+        "companyShortname": null,
+        "count": 6098,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Diversos",
+        "id": "0000000000000312",
+        "companyShortname": null,
+        "count": 5019,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Logística e Entrega Rápida",
+        "id": "0000000000000118",
+        "companyShortname": null,
+        "count": 4155,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Supermercados",
+        "id": "0000000000000040",
+        "companyShortname": null,
+        "count": 3536,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Financeiras",
+        "id": "0000000000000004",
+        "companyShortname": null,
+        "count": 3041,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas na Loja",
+        "id": "0000000000000260",
+        "companyShortname": null,
+        "count": 2033,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Hipermercados",
+        "id": "0000000000000041",
+        "companyShortname": null,
+        "count": 973,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cartões de Crédito",
+        "id": "0000000000000003",
+        "companyShortname": null,
+        "count": 864,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bancos",
+        "id": "0000000000000001",
+        "companyShortname": null,
+        "count": 740,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Lanchonetes",
+        "id": "0000000000000165",
+        "companyShortname": null,
+        "count": 717,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Atendimento para Consultor",
+        "id": "0000000000000276",
+        "companyShortname": null,
+        "count": 615,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Docerias e Cafeterias",
+        "id": "0000000000000159",
+        "companyShortname": null,
+        "count": 378,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Farmácias",
+        "id": "0000000000000028",
+        "companyShortname": null,
+        "count": 240,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Marketplace",
+        "id": "0000000000000275",
+        "companyShortname": null,
+        "count": 214,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sites e portais",
+        "id": "0000000000000070",
+        "companyShortname": null,
+        "count": 193,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Anúncios e Classificados",
+        "id": "0000000000000295",
+        "companyShortname": null,
+        "count": 186,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Embalagens",
+        "id": "0000000000000321",
+        "companyShortname": null,
+        "count": 152,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Serviços para Empresa",
+        "id": "0000000000000139",
+        "companyShortname": null,
+        "count": 110,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cartões de benefícios",
+        "id": "0000000000000136",
+        "companyShortname": null,
+        "count": 110,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Concessionárias de Serviços",
+        "id": "0000000000000302",
+        "companyShortname": null,
+        "count": 70,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bomboniere",
+        "id": "0000000000000142",
+        "companyShortname": null,
+        "count": 61,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Internet Banking",
+        "id": "0000000000000323",
+        "companyShortname": null,
+        "count": 55,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bebidas",
+        "id": "0000000000000072",
+        "companyShortname": null,
+        "count": 38,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Laticínios e Lácteos",
+        "id": "0000000000000149",
+        "companyShortname": null,
+        "count": 32,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sorveterias",
+        "id": "0000000000000163",
+        "companyShortname": null,
+        "count": 32,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pets Alimentos",
+        "id": "0000000000000078",
+        "companyShortname": null,
+        "count": 27,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mercearia",
+        "id": "0000000000000145",
+        "companyShortname": null,
+        "count": 27,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Higiene e Limpeza Pessoal",
+        "id": "0000000000000045",
+        "companyShortname": null,
+        "count": 24,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Softwares",
+        "id": "0000000000000112",
+        "companyShortname": null,
+        "count": 15,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Hortifruti e Ovos",
+        "id": "0000000000000150",
+        "companyShortname": null,
+        "count": 13,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Nutrição Infantil",
+        "id": "0000000000000158",
+        "companyShortname": null,
+        "count": 13,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Postos de combustível",
+        "id": "0000000000000081",
+        "companyShortname": null,
+        "count": 13,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bebidas alcoólicas",
+        "id": "0000000000000073",
+        "companyShortname": null,
+        "count": 9,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Frios",
+        "id": "0000000000000151",
+        "companyShortname": null,
+        "count": 8,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Suplementos Alimentares",
+        "id": "0000000000000121",
+        "companyShortname": null,
+        "count": 8,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pets Produtos e Acessórios",
+        "id": "0000000000000079",
+        "companyShortname": null,
+        "count": 6,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Clubes de Compras e Vantagens",
+        "id": "0000000000000220",
+        "companyShortname": null,
+        "count": 6,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Padaria",
+        "id": "0000000000000152",
+        "companyShortname": null,
+        "count": 5,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Congelados",
+        "id": "0000000000000144",
+        "companyShortname": null,
+        "count": 5,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sorvetes",
+        "id": "0000000000000162",
+        "companyShortname": null,
+        "count": 4,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Consultorias",
+        "id": "0000000000000089",
+        "companyShortname": null,
+        "count": 4,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]

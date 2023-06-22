@@ -1,0 +1,482 @@
+[
+	{
+		"name": "Outro Tipo de produto/Serviço",
+		"id": "0000000000000000",
+		"companyShortname": null,
+		"count": 133625,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Problemas Gerais",
+		"id": "0000000000001409",
+		"companyShortname": null,
+		"count": 111427,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Serviço de Entrega",
+		"id": "0000000000000788",
+		"companyShortname": null,
+		"count": 22843,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pagamentos e Documentos",
+		"id": "0000000000001370",
+		"companyShortname": null,
+		"count": 20785,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Propaganda Enganosa",
+		"id": "0000000000001195",
+		"companyShortname": null,
+		"count": 15227,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Canais de Atendimento",
+		"id": "0000000000001129",
+		"companyShortname": null,
+		"count": 12609,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acesso ao Cadastro",
+		"id": "0000000000001193",
+		"companyShortname": null,
+		"count": 10834,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Equipe de Atendimento",
+		"id": "0000000000001197",
+		"companyShortname": null,
+		"count": 10279,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pagamentos eletrônicos",
+		"id": "0000000000000989",
+		"companyShortname": null,
+		"count": 3572,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Administrativo",
+		"id": "0000000000001131",
+		"companyShortname": null,
+		"count": 1273,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Navegabilidade",
+		"id": "0000000000001194",
+		"companyShortname": null,
+		"count": 1142,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acessórios e Periféricos",
+		"id": "0000000000001396",
+		"companyShortname": null,
+		"count": 1028,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Cartão de crédito",
+		"id": "0000000000000025",
+		"companyShortname": null,
+		"count": 851,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Celular",
+		"id": "0000000000001395",
+		"companyShortname": null,
+		"count": 716,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Aparelhos",
+		"id": "0000000000000990",
+		"companyShortname": null,
+		"count": 625,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Smartphone",
+		"id": "0000000000000020",
+		"companyShortname": null,
+		"count": 507,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Elétricas",
+		"id": "0000000000001096",
+		"companyShortname": null,
+		"count": 384,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Tênis",
+		"id": "0000000000000347",
+		"companyShortname": null,
+		"count": 361,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Financeiras",
+		"id": "0000000000000030",
+		"companyShortname": null,
+		"count": 314,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Equipe",
+		"id": "0000000000001179",
+		"companyShortname": null,
+		"count": 312,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Problemas com o estabelecimento",
+		"id": "0000000000000212",
+		"companyShortname": null,
+		"count": 235,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Ar condicionado",
+		"id": "0000000000000392",
+		"companyShortname": null,
+		"count": 124,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Motorizadas",
+		"id": "0000000000001097",
+		"companyShortname": null,
+		"count": 113,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Colchões e acessórios",
+		"id": "0000000000000689",
+		"companyShortname": null,
+		"count": 99,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Camas e camas-box",
+		"id": "0000000000000187",
+		"companyShortname": null,
+		"count": 84,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Recuperadora de créditos-Cobranças",
+		"id": "0000000000000680",
+		"companyShortname": null,
+		"count": 70,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Móveis",
+		"id": "0000000000001270",
+		"companyShortname": null,
+		"count": 65,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "TV",
+		"id": "0000000000000010",
+		"companyShortname": null,
+		"count": 65,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Geladeira-Refrigerador",
+		"id": "0000000000000385",
+		"companyShortname": null,
+		"count": 63,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Sofás e Estofados",
+		"id": "0000000000000183",
+		"companyShortname": null,
+		"count": 61,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Camisetas",
+		"id": "0000000000000335",
+		"companyShortname": null,
+		"count": 60,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Múltiplo (Débito e crédito)",
+		"id": "0000000000000027",
+		"companyShortname": null,
+		"count": 56,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Sites e portais",
+		"id": "0000000000000480",
+		"companyShortname": null,
+		"count": 54,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Peças",
+		"id": "0000000000000908",
+		"companyShortname": null,
+		"count": 50,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Problemas com a concessionária",
+		"id": "0000000000000035",
+		"companyShortname": null,
+		"count": 48,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Console (Videogame)",
+		"id": "0000000000000581",
+		"companyShortname": null,
+		"count": 44,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Componentes, peças e acessórios",
+		"id": "0000000000000382",
+		"companyShortname": null,
+		"count": 41,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Outros",
+		"id": "0000000000000019",
+		"companyShortname": null,
+		"count": 35,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Entrega",
+		"id": "0000000000000248",
+		"companyShortname": null,
+		"count": 34,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Moda Fitness",
+		"id": "0000000000001238",
+		"companyShortname": null,
+		"count": 34,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Fogão-Forno",
+		"id": "0000000000000386",
+		"companyShortname": null,
+		"count": 34,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acessórios e capas",
+		"id": "0000000000000227",
+		"companyShortname": null,
+		"count": 32,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Calças",
+		"id": "0000000000000337",
+		"companyShortname": null,
+		"count": 29,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Transporte de carga",
+		"id": "0000000000000787",
+		"companyShortname": null,
+		"count": 28,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Cafeteiras e Chaleiras",
+		"id": "0000000000000401",
+		"companyShortname": null,
+		"count": 26,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Fone de ouvido",
+		"id": "0000000000000022",
+		"companyShortname": null,
+		"count": 23,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Blusas",
+		"id": "0000000000000336",
+		"companyShortname": null,
+		"count": 22,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Notebooks",
+		"id": "0000000000000370",
+		"companyShortname": null,
+		"count": 22,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	}
+]

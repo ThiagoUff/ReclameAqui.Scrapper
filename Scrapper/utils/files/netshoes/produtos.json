@@ -1,0 +1,492 @@
+[
+	{
+		"name": "Tênis",
+		"id": "0000000000000347",
+		"companyShortname": null,
+		"count": 100497,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Outro Tipo de produto/Serviço",
+		"id": "0000000000000000",
+		"companyShortname": null,
+		"count": 37544,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Camisetas",
+		"id": "0000000000000335",
+		"companyShortname": null,
+		"count": 19045,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Whey Protein",
+		"id": "0000000000000810",
+		"companyShortname": null,
+		"count": 8389,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Bicicleta",
+		"id": "0000000000000984",
+		"companyShortname": null,
+		"count": 7492,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Sapatos",
+		"id": "0000000000000350",
+		"companyShortname": null,
+		"count": 7047,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Botas",
+		"id": "0000000000000352",
+		"companyShortname": null,
+		"count": 6974,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Canais de Atendimento",
+		"id": "0000000000001129",
+		"companyShortname": null,
+		"count": 4969,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Mochilas",
+		"id": "0000000000000363",
+		"companyShortname": null,
+		"count": 4739,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Moda Fitness",
+		"id": "0000000000001238",
+		"companyShortname": null,
+		"count": 4522,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Chinelo",
+		"id": "0000000000000351",
+		"companyShortname": null,
+		"count": 3561,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acessórios para Musculação",
+		"id": "0000000000001397",
+		"companyShortname": null,
+		"count": 3505,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Equipe de Atendimento",
+		"id": "0000000000001197",
+		"companyShortname": null,
+		"count": 3046,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Propaganda Enganosa",
+		"id": "0000000000001195",
+		"companyShortname": null,
+		"count": 2875,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pagamentos e Documentos",
+		"id": "0000000000001370",
+		"companyShortname": null,
+		"count": 2368,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Bolas",
+		"id": "0000000000000928",
+		"companyShortname": null,
+		"count": 2028,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Uniformes",
+		"id": "0000000000001306",
+		"companyShortname": null,
+		"count": 1865,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Bonés e chapéus",
+		"id": "0000000000000357",
+		"companyShortname": null,
+		"count": 1670,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Sandálias",
+		"id": "0000000000000349",
+		"companyShortname": null,
+		"count": 1629,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Relógios",
+		"id": "0000000000000328",
+		"companyShortname": null,
+		"count": 1446,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Bolsas",
+		"id": "0000000000000362",
+		"companyShortname": null,
+		"count": 1315,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acesso ao Cadastro",
+		"id": "0000000000001193",
+		"companyShortname": null,
+		"count": 1256,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Creatina",
+		"id": "0000000000000797",
+		"companyShortname": null,
+		"count": 1098,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "BCAA",
+		"id": "0000000000000795",
+		"companyShortname": null,
+		"count": 983,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Luvas e Bonés",
+		"id": "0000000000001402",
+		"companyShortname": null,
+		"count": 974,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Hipercalórico - Massa",
+		"id": "0000000000000802",
+		"companyShortname": null,
+		"count": 960,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Kimonos",
+		"id": "0000000000000942",
+		"companyShortname": null,
+		"count": 940,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Patins e Patinetes",
+		"id": "0000000000000952",
+		"companyShortname": null,
+		"count": 895,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pré-Treino",
+		"id": "0000000000000807",
+		"companyShortname": null,
+		"count": 843,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Emagrecedores",
+		"id": "0000000000001061",
+		"companyShortname": null,
+		"count": 690,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acessórios para Natação e Mergulho",
+		"id": "0000000000001404",
+		"companyShortname": null,
+		"count": 591,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Atendimento",
+		"id": "0000000000000211",
+		"companyShortname": null,
+		"count": 536,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Malas",
+		"id": "0000000000000364",
+		"companyShortname": null,
+		"count": 531,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acessórios para Proteção e Segurança",
+		"id": "0000000000001406",
+		"companyShortname": null,
+		"count": 524,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Esteiras",
+		"id": "0000000000000319",
+		"companyShortname": null,
+		"count": 458,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Sapatilhas",
+		"id": "0000000000000348",
+		"companyShortname": null,
+		"count": 434,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Aparelhos de musculação",
+		"id": "0000000000000323",
+		"companyShortname": null,
+		"count": 405,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Blusas",
+		"id": "0000000000000336",
+		"companyShortname": null,
+		"count": 394,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Bikes",
+		"id": "0000000000000320",
+		"companyShortname": null,
+		"count": 386,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Glutamina",
+		"id": "0000000000000801",
+		"companyShortname": null,
+		"count": 341,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Medicamentos e Vitaminas",
+		"id": "0000000000000645",
+		"companyShortname": null,
+		"count": 308,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acessórios para Bicicletas",
+		"id": "0000000000001408",
+		"companyShortname": null,
+		"count": 305,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Steps e trampolim",
+		"id": "0000000000000326",
+		"companyShortname": null,
+		"count": 294,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pesos e halteres",
+		"id": "0000000000000325",
+		"companyShortname": null,
+		"count": 240,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Shorts",
+		"id": "0000000000000343",
+		"companyShortname": null,
+		"count": 240,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Barra de Proteína",
+		"id": "0000000000000796",
+		"companyShortname": null,
+		"count": 239,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Mocassim",
+		"id": "0000000000000355",
+		"companyShortname": null,
+		"count": 215,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pranchas e Skates",
+		"id": "0000000000001403",
+		"companyShortname": null,
+		"count": 210,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Casacos e jaquetas",
+		"id": "0000000000000338",
+		"companyShortname": null,
+		"count": 208,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	}
+]

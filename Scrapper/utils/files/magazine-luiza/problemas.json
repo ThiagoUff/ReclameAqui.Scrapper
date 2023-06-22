@@ -1,0 +1,472 @@
+[
+    {
+        "name": "Atraso na entrega",
+        "id": "0000000000000001",
+        "companyShortname": null,
+        "count": 127648,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto não recebido",
+        "id": "0000000000001454",
+        "companyShortname": null,
+        "count": 66545,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Outro problema",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 55023,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Estorno do valor pago",
+        "id": "0000000000000007",
+        "companyShortname": null,
+        "count": 40425,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Troca-Devolução de produto",
+        "id": "0000000000001457",
+        "companyShortname": null,
+        "count": 29675,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto com defeito",
+        "id": "0000000000001458",
+        "companyShortname": null,
+        "count": 24437,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Propaganda enganosa",
+        "id": "0000000000000009",
+        "companyShortname": null,
+        "count": 20142,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto errado",
+        "id": "0000000000000014",
+        "companyShortname": null,
+        "count": 15657,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Estorno do valor pago",
+        "id": "0000000000001455",
+        "companyShortname": null,
+        "count": 12193,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas na finalização da compra",
+        "id": "0000000000001577",
+        "companyShortname": null,
+        "count": 10747,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau atendimento no SAC",
+        "id": "0000000000001459",
+        "companyShortname": null,
+        "count": 8253,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto indisponível",
+        "id": "0000000000000008",
+        "companyShortname": null,
+        "count": 4162,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Divergência de valores",
+        "id": "0000000000000011",
+        "companyShortname": null,
+        "count": 2826,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Amassado",
+        "id": "0000000000000137",
+        "companyShortname": null,
+        "count": 2284,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Má qualidade do produto",
+        "id": "0000000000000387",
+        "companyShortname": null,
+        "count": 2214,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto com peças faltando",
+        "id": "0000000000000394",
+        "companyShortname": null,
+        "count": 1560,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cancelamento",
+        "id": "0000000000000078",
+        "companyShortname": null,
+        "count": 1512,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Peças quebradas",
+        "id": "0000000000000395",
+        "companyShortname": null,
+        "count": 1475,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Má qualidade",
+        "id": "0000000000000158",
+        "companyShortname": null,
+        "count": 1375,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não liga",
+        "id": "0000000000000029",
+        "companyShortname": null,
+        "count": 1284,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Instalação-Reparo não concluídos",
+        "id": "0000000000000716",
+        "companyShortname": null,
+        "count": 1182,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto usado",
+        "id": "0000000000000006",
+        "companyShortname": null,
+        "count": 879,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Forma de pagamento indisponível",
+        "id": "0000000000001576",
+        "companyShortname": null,
+        "count": 830,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não recebi",
+        "id": "0000000000000568",
+        "companyShortname": null,
+        "count": 828,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Valor de frete",
+        "id": "0000000000001456",
+        "companyShortname": null,
+        "count": 811,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Maquiagem de preço",
+        "id": "0000000000001578",
+        "companyShortname": null,
+        "count": 755,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Peças faltando",
+        "id": "0000000000000175",
+        "companyShortname": null,
+        "count": 679,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Quebrado",
+        "id": "0000000000000159",
+        "companyShortname": null,
+        "count": 655,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Tela trincada",
+        "id": "0000000000000022",
+        "companyShortname": null,
+        "count": 627,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Assistência técnica",
+        "id": "0000000000000866",
+        "companyShortname": null,
+        "count": 559,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não gela",
+        "id": "0000000000000772",
+        "companyShortname": null,
+        "count": 529,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau Atendimento",
+        "id": "0000000000000002",
+        "companyShortname": null,
+        "count": 529,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Peças erradas",
+        "id": "0000000000000396",
+        "companyShortname": null,
+        "count": 527,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto quebrou com pouco tempo de uso",
+        "id": "0000000000000800",
+        "companyShortname": null,
+        "count": 505,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com a tela",
+        "id": "0000000000000067",
+        "companyShortname": null,
+        "count": 449,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Estofamento rasgado",
+        "id": "0000000000000385",
+        "companyShortname": null,
+        "count": 444,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Site fora do ar-Lento",
+        "id": "0000000000001498",
+        "companyShortname": null,
+        "count": 408,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cobrança indevida",
+        "id": "0000000000000075",
+        "companyShortname": null,
+        "count": 404,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não atualiza",
+        "id": "0000000000000030",
+        "companyShortname": null,
+        "count": 401,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Descumprimento de prazos",
+        "id": "0000000000000728",
+        "companyShortname": null,
+        "count": 366,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Tela manchada",
+        "id": "0000000000000023",
+        "companyShortname": null,
+        "count": 351,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Promoção",
+        "id": "0000000000000476",
+        "companyShortname": null,
+        "count": 346,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não carrega",
+        "id": "0000000000000054",
+        "companyShortname": null,
+        "count": 340,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Desligando sozinho",
+        "id": "0000000000000197",
+        "companyShortname": null,
+        "count": 340,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Falta de peças",
+        "id": "0000000000000834",
+        "companyShortname": null,
+        "count": 309,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Propagada enganosa",
+        "id": "0000000000000620",
+        "companyShortname": null,
+        "count": 307,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problema com garantia estendida",
+        "id": "0000000000000010",
+        "companyShortname": null,
+        "count": 307,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]

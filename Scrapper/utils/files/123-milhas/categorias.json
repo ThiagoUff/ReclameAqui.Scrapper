@@ -1,0 +1,212 @@
+[
+					{
+						"name": "Não encontrei meu problema",
+						"id": "0000000000000000",
+						"companyShortname": null,
+						"count": 57040,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Agência de Viagens",
+						"id": "0000000000000017",
+						"companyShortname": null,
+						"count": 19890,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Problemas com o Atendimento",
+						"id": "0000000000000255",
+						"companyShortname": null,
+						"count": 15368,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Milhas",
+						"id": "0000000000000218",
+						"companyShortname": null,
+						"count": 10984,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Companhias Aéreas",
+						"id": "0000000000000018",
+						"companyShortname": null,
+						"count": 3914,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Não categorizado",
+						"id": "-000000000000001",
+						"companyShortname": null,
+						"count": 2820,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cartões de Crédito",
+						"id": "0000000000000003",
+						"companyShortname": null,
+						"count": 715,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Problemas com o Site",
+						"id": "0000000000000259",
+						"companyShortname": null,
+						"count": 417,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Programas de Fidelidade",
+						"id": "0000000000000115",
+						"companyShortname": null,
+						"count": 56,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Meios de pagamentos eletrônicos",
+						"id": "0000000000000135",
+						"companyShortname": null,
+						"count": 19,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Bancos",
+						"id": "0000000000000001",
+						"companyShortname": null,
+						"count": 14,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Hotéis",
+						"id": "0000000000000169",
+						"companyShortname": null,
+						"count": 7,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Seguradoras",
+						"id": "0000000000000006",
+						"companyShortname": null,
+						"count": 5,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Aluguel de Carros",
+						"id": "0000000000000013",
+						"companyShortname": null,
+						"count": 3,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Redes de Hotéis",
+						"id": "0000000000000170",
+						"companyShortname": null,
+						"count": 3,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Aeroportos",
+						"id": "0000000000000306",
+						"companyShortname": null,
+						"count": 2,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Sites e portais",
+						"id": "0000000000000070",
+						"companyShortname": null,
+						"count": 2,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Seguro de Viagens",
+						"id": "0000000000000175",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Ônibus Rodoviário",
+						"id": "0000000000000016",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Consultorias",
+						"id": "0000000000000089",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Financeiras",
+						"id": "0000000000000004",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					}
+				]

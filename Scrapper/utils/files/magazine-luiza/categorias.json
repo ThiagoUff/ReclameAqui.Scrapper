@@ -1,0 +1,492 @@
+[
+    {
+        "name": "Eletrodomésticos",
+        "id": "0000000000000060",
+        "companyShortname": null,
+        "count": 78277,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Celulares e Smartphones",
+        "id": "0000000000000064",
+        "companyShortname": null,
+        "count": 66443,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não encontrei meu problema",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 57443,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Móveis em Geral",
+        "id": "0000000000000192",
+        "companyShortname": null,
+        "count": 53083,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Eletroeletrônicos",
+        "id": "0000000000000059",
+        "companyShortname": null,
+        "count": 37535,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Informática",
+        "id": "0000000000000058",
+        "companyShortname": null,
+        "count": 25142,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Eletroportáteis",
+        "id": "0000000000000061",
+        "companyShortname": null,
+        "count": 21371,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Utilidades domésticas",
+        "id": "0000000000000062",
+        "companyShortname": null,
+        "count": 19998,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não categorizado",
+        "id": "-000000000000001",
+        "companyShortname": null,
+        "count": 13648,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Brinquedos e jogos",
+        "id": "0000000000000074",
+        "companyShortname": null,
+        "count": 10364,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cama, Mesa e Banho",
+        "id": "0000000000000038",
+        "companyShortname": null,
+        "count": 7802,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com o Atendimento",
+        "id": "0000000000000255",
+        "companyShortname": null,
+        "count": 7165,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Colchões",
+        "id": "0000000000000091",
+        "companyShortname": null,
+        "count": 6892,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Acessórios de Vestuário",
+        "id": "0000000000000054",
+        "companyShortname": null,
+        "count": 6436,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Higiene e Limpeza Pessoal",
+        "id": "0000000000000045",
+        "companyShortname": null,
+        "count": 6119,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Acessórios para Carros",
+        "id": "0000000000000011",
+        "companyShortname": null,
+        "count": 5583,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Games e Jogos",
+        "id": "0000000000000075",
+        "companyShortname": null,
+        "count": 5468,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Equipamentos de Beleza e Estética",
+        "id": "0000000000000253",
+        "companyShortname": null,
+        "count": 5020,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Acessórios para Bebê",
+        "id": "0000000000000123",
+        "companyShortname": null,
+        "count": 4965,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Artigos para bebê",
+        "id": "0000000000000124",
+        "companyShortname": null,
+        "count": 3592,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Relógios",
+        "id": "0000000000000049",
+        "companyShortname": null,
+        "count": 3132,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Equipamentos de academia",
+        "id": "0000000000000048",
+        "companyShortname": null,
+        "count": 2792,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Livros",
+        "id": "0000000000000094",
+        "companyShortname": null,
+        "count": 2646,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Móveis Modulados",
+        "id": "0000000000000167",
+        "companyShortname": null,
+        "count": 2565,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com o Site",
+        "id": "0000000000000259",
+        "companyShortname": null,
+        "count": 2449,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bolsas e Malas",
+        "id": "0000000000000055",
+        "companyShortname": null,
+        "count": 2376,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Perfumarias",
+        "id": "0000000000000092",
+        "companyShortname": null,
+        "count": 2167,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Suplementos Alimentares",
+        "id": "0000000000000121",
+        "companyShortname": null,
+        "count": 2103,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cabelos",
+        "id": "0000000000000271",
+        "companyShortname": null,
+        "count": 2040,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Troca de Fraldas",
+        "id": "0000000000000258",
+        "companyShortname": null,
+        "count": 1628,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Material Escolar e Escritórios",
+        "id": "0000000000000095",
+        "companyShortname": null,
+        "count": 1520,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pets Produtos e Acessórios",
+        "id": "0000000000000079",
+        "companyShortname": null,
+        "count": 1475,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Calçados Femininos",
+        "id": "0000000000000224",
+        "companyShortname": null,
+        "count": 1456,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Calçados Masculinos",
+        "id": "0000000000000227",
+        "companyShortname": null,
+        "count": 1177,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Corpo e Banho",
+        "id": "0000000000000103",
+        "companyShortname": null,
+        "count": 1093,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Telefones fixos (aparelhos)",
+        "id": "0000000000000065",
+        "companyShortname": null,
+        "count": 1009,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Foto e Vídeo",
+        "id": "0000000000000057",
+        "companyShortname": null,
+        "count": 1005,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Acessórios para Motos",
+        "id": "0000000000000128",
+        "companyShortname": null,
+        "count": 939,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas na Loja",
+        "id": "0000000000000260",
+        "companyShortname": null,
+        "count": 936,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Moda Masculina",
+        "id": "0000000000000229",
+        "companyShortname": null,
+        "count": 886,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Chuveiros e Aquecedores",
+        "id": "0000000000000126",
+        "companyShortname": null,
+        "count": 789,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cartões de Crédito",
+        "id": "0000000000000003",
+        "companyShortname": null,
+        "count": 778,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pets Alimentos",
+        "id": "0000000000000078",
+        "companyShortname": null,
+        "count": 681,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Óculos, Lentes e Acessórios",
+        "id": "0000000000000113",
+        "companyShortname": null,
+        "count": 623,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Moda Feminina",
+        "id": "0000000000000233",
+        "companyShortname": null,
+        "count": 525,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Maquiagem",
+        "id": "0000000000000261",
+        "companyShortname": null,
+        "count": 498,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Corpo e Banho Infantil",
+        "id": "0000000000000256",
+        "companyShortname": null,
+        "count": 409,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Calçados Esportivos",
+        "id": "0000000000000283",
+        "companyShortname": null,
+        "count": 238,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Higiene Bucal",
+        "id": "0000000000000268",
+        "companyShortname": null,
+        "count": 227,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]

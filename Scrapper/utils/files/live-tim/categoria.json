@@ -1,0 +1,192 @@
+[
+    {
+        "name": "Provedores e serv. de internet",
+        "id": "0000000000000069",
+        "companyShortname": null,
+        "count": 52013,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não encontrei meu problema",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 6386,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com o Atendimento",
+        "id": "0000000000000255",
+        "companyShortname": null,
+        "count": 2937,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com o Site",
+        "id": "0000000000000259",
+        "companyShortname": null,
+        "count": 1261,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não categorizado",
+        "id": "-000000000000001",
+        "companyShortname": null,
+        "count": 1175,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Telefonia fixa",
+        "id": "0000000000000066",
+        "companyShortname": null,
+        "count": 276,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Telefonia celular",
+        "id": "0000000000000067",
+        "companyShortname": null,
+        "count": 123,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bancos",
+        "id": "0000000000000001",
+        "companyShortname": null,
+        "count": 27,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Diversos",
+        "id": "0000000000000312",
+        "companyShortname": null,
+        "count": 25,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Celulares e Smartphones",
+        "id": "0000000000000064",
+        "companyShortname": null,
+        "count": 12,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cartões de Crédito",
+        "id": "0000000000000003",
+        "companyShortname": null,
+        "count": 7,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Ecommerce Local",
+        "id": "0000000000000090",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Internet Banking",
+        "id": "0000000000000323",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Serviços de câmbio e transferência de dinheiro",
+        "id": "0000000000000133",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Logística e Entrega Rápida",
+        "id": "0000000000000118",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "TV por assinatura",
+        "id": "0000000000000068",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Financeiras",
+        "id": "0000000000000004",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Meios de pagamentos eletrônicos",
+        "id": "0000000000000135",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sites e portais",
+        "id": "0000000000000070",
+        "companyShortname": null,
+        "count": 1,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]

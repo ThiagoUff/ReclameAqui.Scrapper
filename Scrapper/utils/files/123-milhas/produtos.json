@@ -1,0 +1,362 @@
+[
+	{
+		"name": "Outro Tipo de produto/Serviço",
+		"id": "0000000000000000",
+		"companyShortname": null,
+		"count": 56761,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Passagem Aérea",
+		"id": "0000000000001065",
+		"companyShortname": null,
+		"count": 42824,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Compra e Venda",
+		"id": "0000000000001381",
+		"companyShortname": null,
+		"count": 13172,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Canais de Atendimento",
+		"id": "0000000000001129",
+		"companyShortname": null,
+		"count": 3690,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Equipe de Atendimento",
+		"id": "0000000000001197",
+		"companyShortname": null,
+		"count": 2161,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pacotes",
+		"id": "0000000000000088",
+		"companyShortname": null,
+		"count": 1805,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Cartão de crédito",
+		"id": "0000000000000025",
+		"companyShortname": null,
+		"count": 960,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Propaganda Enganosa",
+		"id": "0000000000001195",
+		"companyShortname": null,
+		"count": 452,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pontos e Milhas",
+		"id": "0000000000000785",
+		"companyShortname": null,
+		"count": 225,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Aeroporto",
+		"id": "0000000000001100",
+		"companyShortname": null,
+		"count": 124,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Problemas Gerais",
+		"id": "0000000000001409",
+		"companyShortname": null,
+		"count": 118,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Problemas companhia aérea",
+		"id": "0000000000000093",
+		"companyShortname": null,
+		"count": 73,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Hotéis",
+		"id": "0000000000000090",
+		"companyShortname": null,
+		"count": 38,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pagamentos eletrônicos",
+		"id": "0000000000000989",
+		"companyShortname": null,
+		"count": 12,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Seguro de viagem",
+		"id": "0000000000000919",
+		"companyShortname": null,
+		"count": 5,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Recepção",
+		"id": "0000000000001074",
+		"companyShortname": null,
+		"count": 5,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pagamentos e Documentos",
+		"id": "0000000000001370",
+		"companyShortname": null,
+		"count": 3,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Aterrissagem e Decolagem",
+		"id": "0000000000001092",
+		"companyShortname": null,
+		"count": 3,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Carro",
+		"id": "0000000000000033",
+		"companyShortname": null,
+		"count": 2,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Financeiras",
+		"id": "0000000000000030",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Contrato de Locação",
+		"id": "0000000000000083",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Compra de Passagem",
+		"id": "0000000000001352",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Navegabilidade",
+		"id": "0000000000001194",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Contrato de Seguro",
+		"id": "0000000000001177",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Tripulação",
+		"id": "0000000000001069",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Entrega",
+		"id": "0000000000000248",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acesso ao Cadastro",
+		"id": "0000000000001193",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Passeios",
+		"id": "0000000000000091",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Cartão Viagem",
+		"id": "0000000000000029",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Embarque e Desembarque",
+		"id": "0000000000001365",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Consultoria Jurídica",
+		"id": "0000000000001293",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Quartos",
+		"id": "0000000000001076",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Administrativo",
+		"id": "0000000000001131",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Aeronave",
+		"id": "0000000000001068",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Sites e portais",
+		"id": "0000000000000480",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Anúncio",
+		"id": "0000000000001521",
+		"companyShortname": null,
+		"count": 1,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	}
+]

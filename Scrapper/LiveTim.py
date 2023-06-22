@@ -5,15 +5,19 @@ import concurrent.futures
 
 from Reclamacao import Reclamacao
 from Repo import MongoDBManager
+from consts import cat_all, prob_all, prod_all
 
 companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood',
              'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
 
+status_list = ['', 'NOT_ANSWERED', 'ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
+ids = []
 
 # Definir o cabeçalho de User-Agent
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36'
 }
+
 
 def soap_find(soap, string, args, is_attr, has_span):
     tag = soap.find(string, attrs=args) if is_attr else soap.find(
@@ -27,6 +31,11 @@ def soap_find(soap, string, args, is_attr, has_span):
 
 
 def parse_details(details_soap, company):
+    id = soap_find(details_soap, 'span', {
+                   'data-testid': 'complaint-id'}, True, False)[4:]
+    if id in ids:
+        return
+    ids.append(id)
     titulo = soap_find(details_soap, 'h1', {
                        'data-testid': 'complaint-title'}, True, False)
     status = soap_find(details_soap, 'div', {
@@ -43,8 +52,7 @@ def parse_details(details_soap, company):
         'data-testid': 'listitem-problema'}, True, False)
     produto = soap_find(details_soap, 'li', {
         'data-testid': 'listitem-produto'}, True, False)
-    id = soap_find(details_soap, 'span', {
-                   'data-testid': 'complaint-id'}, True, False)[4:]
+
     voltaria_fazer_negocio = soap_find(
         details_soap, 'p', {'data-testid': 'complaint-deal-again'}, True, False)
     nota = soap_find(details_soap, 'div', "uh4o7z-3 jSJcMd", False, False)
@@ -103,43 +111,65 @@ def process_item(item, company):
     end_time = time.time()
 
     print('Processamento em:', end_time - start_time)
+    print('Total: ', len(ids))
     print('------------------')
     print()
     print()
 
 
 def process_company(company):
-    base_url = f'https://www.reclameaqui.com.br/empresa/{company}/lista-reclamacoes'
-    # Loop para percorrer todas as páginas de reclamações
-    pagina = 1
-    while True:
-        # Montar a URL da página atual
-        url = f'{base_url}/?pagina={pagina}'
+    for status in status_list:
+        for produto in prod_all:
+            for categoria in cat_all:
+                for problema in prob_all:
+                    status_text = ""
+                    categoria_text = ""
+                    problema_text = ""
+                    produto_text = ""
+                    if status:
+                        status_text = f"&status={status}"
+                    if categoria:
+                        categoria_text = f"&categoria={categoria}"
+                    if produto:
+                        produto_text = f"&produto={produto}"
+                    if problema:
+                        problema_text = f"&problema={problema}"
 
-        # Fazer a requisição HTTP com o cabeçalho de User-Agent
-        response = requests.get(url, headers=headers)
+                    base_url = f'https://www.reclameaqui.com.br/empresa/{company}/lista-reclamacoes'
+                    # Loop para percorrer todas as páginas de reclamações
+                    pagina = 1
+                    while True:
+                        print('--- Pagina ---')
+                        # Montar a URL da página atual
+                        url = f'{base_url}/?pagina={pagina}{status_text}{categoria_text}{produto_text}{problema_text}'
+                        print(url)
 
-        # Verificar se a requisição foi bem-sucedida
-        if response.status_code != 200:
-            print(
-                f'Erro ao acessar a página {url}. Status: {response.status_code}')
-            break
+                        # Fazer a requisição HTTP com o cabeçalho de User-Agent
+                        response = requests.get(url, headers=headers)
 
-        # Criar o objeto BeautifulSoup
-        soup = BeautifulSoup(response.text, 'html.parser')
+                        # Verificar se a requisição foi bem-sucedida
+                        if response.status_code != 200:
+                            print(
+                                f'Erro ao acessar a página {url}. Status: {response.status_code}')
+                            break
 
-        # Encontrar todas as divs de reclamação
-        reclamacoes = soup.find_all('div', class_='sc-1pe7b5t-0 iQGzPh')
+                        # Criar o objeto BeautifulSoup
+                        soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Verificar se há reclamações na página
-        if len(reclamacoes) == 0:
-            print(f'Nenhuma reclamação encontrada na página {url}')
-            break
+                        # Encontrar todas as divs de reclamação
+                        reclamacoes = soup.find_all('div', class_='sc-1pe7b5t-0 iQGzPh')
 
-        # Loop para processar cada reclamação da página
-        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-            results = executor.map(process_item, reclamacoes, company)
-        pagina += 1
+                        # Verificar se há reclamações na página
+                        if len(reclamacoes) == 0:
+                            print(f'Nenhuma reclamação encontrada na página {url}')
+                            break
+                        # Loop para processar cada reclamação da página
+                        for reclamacao in reclamacoes:
+                            process_item(reclamacao, company)
+                        # with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                            # results = executor.map(, reclamacoes, company)
+                        pagina += 10
+                        print('--- Fim da Pagina ---')
 
     manager = MongoDBManager(company)
     manager.gerar_arquivo_json()
@@ -147,6 +177,8 @@ def process_company(company):
     manager.fechar_conexao()
 
 
-# with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-for company in companies:
-    process_company(company)
+with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+    results = executor.map(process_company, companies)
+
+# for company in companies:
+#     process_company(company)

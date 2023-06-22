@@ -1,0 +1,482 @@
+[
+	{
+		"name": "Outro Tipo de produto/Serviço",
+		"id": "0000000000000000",
+		"companyShortname": null,
+		"count": 63506,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Livros",
+		"id": "0000000000000692",
+		"companyShortname": null,
+		"count": 20830,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pagamentos e Documentos",
+		"id": "0000000000001370",
+		"companyShortname": null,
+		"count": 14943,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produtos",
+		"id": "0000000000001170",
+		"companyShortname": null,
+		"count": 13154,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Canais de Atendimento",
+		"id": "0000000000001129",
+		"companyShortname": null,
+		"count": 11498,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Cadastro e Assinatura",
+		"id": "0000000000000247",
+		"companyShortname": null,
+		"count": 8626,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acesso ao Cadastro",
+		"id": "0000000000001193",
+		"companyShortname": null,
+		"count": 7373,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Propaganda Enganosa",
+		"id": "0000000000001195",
+		"companyShortname": null,
+		"count": 7368,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Equipe de Atendimento",
+		"id": "0000000000001197",
+		"companyShortname": null,
+		"count": 6606,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Smartphone",
+		"id": "0000000000000020",
+		"companyShortname": null,
+		"count": 5291,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Outros",
+		"id": "0000000000000019",
+		"companyShortname": null,
+		"count": 4704,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Problemas Gerais",
+		"id": "0000000000001409",
+		"companyShortname": null,
+		"count": 4466,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Celular",
+		"id": "0000000000001395",
+		"companyShortname": null,
+		"count": 4441,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Jogos",
+		"id": "0000000000000582",
+		"companyShortname": null,
+		"count": 2722,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Cartão de crédito",
+		"id": "0000000000000025",
+		"companyShortname": null,
+		"count": 2430,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Console (Videogame)",
+		"id": "0000000000000581",
+		"companyShortname": null,
+		"count": 1913,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "TV",
+		"id": "0000000000000010",
+		"companyShortname": null,
+		"count": 1743,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Notebooks",
+		"id": "0000000000000370",
+		"companyShortname": null,
+		"count": 1708,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Fone de ouvido",
+		"id": "0000000000000022",
+		"companyShortname": null,
+		"count": 1353,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Caixas de som e fone de ouvido",
+		"id": "0000000000000379",
+		"companyShortname": null,
+		"count": 1338,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Componentes, peças e acessórios",
+		"id": "0000000000000382",
+		"companyShortname": null,
+		"count": 1303,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Aparelhos de som",
+		"id": "0000000000000011",
+		"companyShortname": null,
+		"count": 1205,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Serviço de Entrega",
+		"id": "0000000000000788",
+		"companyShortname": null,
+		"count": 968,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Box e coleções",
+		"id": "0000000000000693",
+		"companyShortname": null,
+		"count": 869,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Acessórios e Periféricos",
+		"id": "0000000000001396",
+		"companyShortname": null,
+		"count": 761,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "TV por assinatura",
+		"id": "0000000000000475",
+		"companyShortname": null,
+		"count": 757,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Leitores de Ebooks",
+		"id": "0000000000001369",
+		"companyShortname": null,
+		"count": 725,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Navegabilidade",
+		"id": "0000000000001194",
+		"companyShortname": null,
+		"count": 713,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Ventiladores e Circuladores de ar",
+		"id": "0000000000000422",
+		"companyShortname": null,
+		"count": 704,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Redes online",
+		"id": "0000000000000583",
+		"companyShortname": null,
+		"count": 673,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Atendimento",
+		"id": "0000000000000211",
+		"companyShortname": null,
+		"count": 579,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Controles e Joysticks",
+		"id": "0000000000001264",
+		"companyShortname": null,
+		"count": 533,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Monitores",
+		"id": "0000000000000375",
+		"companyShortname": null,
+		"count": 517,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Pagamentos eletrônicos",
+		"id": "0000000000000989",
+		"companyShortname": null,
+		"count": 420,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Shampoo",
+		"id": "0000000000000311",
+		"companyShortname": null,
+		"count": 414,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "HDs externos e pen drives",
+		"id": "0000000000000380",
+		"companyShortname": null,
+		"count": 407,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Mouse",
+		"id": "0000000000000377",
+		"companyShortname": null,
+		"count": 359,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Ar condicionado",
+		"id": "0000000000000392",
+		"companyShortname": null,
+		"count": 331,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Teclados",
+		"id": "0000000000000378",
+		"companyShortname": null,
+		"count": 325,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Capas protetoras",
+		"id": "0000000000000023",
+		"companyShortname": null,
+		"count": 324,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Geladeira-Refrigerador",
+		"id": "0000000000000385",
+		"companyShortname": null,
+		"count": 311,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Potes",
+		"id": "0000000000000441",
+		"companyShortname": null,
+		"count": 308,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Fogão-Forno",
+		"id": "0000000000000386",
+		"companyShortname": null,
+		"count": 303,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Tablets",
+		"id": "0000000000000372",
+		"companyShortname": null,
+		"count": 286,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Panela",
+		"id": "0000000000000427",
+		"companyShortname": null,
+		"count": 280,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Aspiradores e vassouras",
+		"id": "0000000000000398",
+		"companyShortname": null,
+		"count": 275,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Conversor digital",
+		"id": "0000000000000018",
+		"companyShortname": null,
+		"count": 268,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Impressoras",
+		"id": "0000000000000373",
+		"companyShortname": null,
+		"count": 267,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	}
+]

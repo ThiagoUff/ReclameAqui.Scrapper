@@ -1,0 +1,472 @@
+[
+	{
+		"name": "Atraso na entrega",
+		"id": "0000000000000001",
+		"companyShortname": null,
+		"count": 60140,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produto não recebido",
+		"id": "0000000000001454",
+		"companyShortname": null,
+		"count": 39381,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Troca-Devolução de produto",
+		"id": "0000000000001457",
+		"companyShortname": null,
+		"count": 30964,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Outro problema",
+		"id": "0000000000000000",
+		"companyShortname": null,
+		"count": 28462,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Estorno do valor pago",
+		"id": "0000000000000007",
+		"companyShortname": null,
+		"count": 17057,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Propaganda enganosa",
+		"id": "0000000000000009",
+		"companyShortname": null,
+		"count": 9741,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produto errado",
+		"id": "0000000000000014",
+		"companyShortname": null,
+		"count": 8774,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Problemas na finalização da compra",
+		"id": "0000000000001577",
+		"companyShortname": null,
+		"count": 7440,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Estorno do valor pago",
+		"id": "0000000000001455",
+		"companyShortname": null,
+		"count": 6856,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Divergência de valores",
+		"id": "0000000000000011",
+		"companyShortname": null,
+		"count": 6081,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Mau atendimento no SAC",
+		"id": "0000000000001459",
+		"companyShortname": null,
+		"count": 5459,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produto com defeito",
+		"id": "0000000000001458",
+		"companyShortname": null,
+		"count": 4865,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Má qualidade",
+		"id": "0000000000000158",
+		"companyShortname": null,
+		"count": 3555,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produto indisponível",
+		"id": "0000000000000008",
+		"companyShortname": null,
+		"count": 1752,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Instalação-Reparo não concluídos",
+		"id": "0000000000000716",
+		"companyShortname": null,
+		"count": 1273,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Tamanhos diferentes",
+		"id": "0000000000000690",
+		"companyShortname": null,
+		"count": 1157,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Promoção",
+		"id": "0000000000000476",
+		"companyShortname": null,
+		"count": 928,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Sola soltando",
+		"id": "0000000000000688",
+		"companyShortname": null,
+		"count": 844,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Forma de pagamento indisponível",
+		"id": "0000000000001576",
+		"companyShortname": null,
+		"count": 802,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Maquiagem de preço",
+		"id": "0000000000001578",
+		"companyShortname": null,
+		"count": 766,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Login-Senha",
+		"id": "0000000000001460",
+		"companyShortname": null,
+		"count": 693,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Machucando",
+		"id": "0000000000000600",
+		"companyShortname": null,
+		"count": 641,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Rasgado",
+		"id": "0000000000000193",
+		"companyShortname": null,
+		"count": 593,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Valor de frete",
+		"id": "0000000000001456",
+		"companyShortname": null,
+		"count": 568,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Demora na aprovação do pagamento",
+		"id": "0000000000001674",
+		"companyShortname": null,
+		"count": 475,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Mau Atendimento",
+		"id": "0000000000000002",
+		"companyShortname": null,
+		"count": 442,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Site fora do ar-Lento",
+		"id": "0000000000001498",
+		"companyShortname": null,
+		"count": 379,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Embalagem danificada",
+		"id": "0000000000001162",
+		"companyShortname": null,
+		"count": 353,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Promoções",
+		"id": "0000000000000012",
+		"companyShortname": null,
+		"count": 328,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Descosturando",
+		"id": "0000000000000550",
+		"companyShortname": null,
+		"count": 320,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Descostuando",
+		"id": "0000000000000691",
+		"companyShortname": null,
+		"count": 313,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produto usado",
+		"id": "0000000000000006",
+		"companyShortname": null,
+		"count": 290,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Atualização de dados cadastrais",
+		"id": "0000000000000532",
+		"companyShortname": null,
+		"count": 286,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produto com defeito",
+		"id": "0000000000001201",
+		"companyShortname": null,
+		"count": 277,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Demora no atendimento",
+		"id": "0000000000000541",
+		"companyShortname": null,
+		"count": 260,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Divergência de preço",
+		"id": "0000000000000592",
+		"companyShortname": null,
+		"count": 231,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Tamanho diferente",
+		"id": "0000000000000692",
+		"companyShortname": null,
+		"count": 222,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Qualidade do produto",
+		"id": "0000000000000413",
+		"companyShortname": null,
+		"count": 209,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Encerramento de conta",
+		"id": "0000000000001468",
+		"companyShortname": null,
+		"count": 191,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Não consigo fazer operação por chat",
+		"id": "0000000000001675",
+		"companyShortname": null,
+		"count": 189,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Produto vencido",
+		"id": "0000000000001374",
+		"companyShortname": null,
+		"count": 179,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Não atende",
+		"id": "0000000000001678",
+		"companyShortname": null,
+		"count": 173,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Dificuldade de cadastro",
+		"id": "0000000000001461",
+		"companyShortname": null,
+		"count": 158,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Peças faltando",
+		"id": "0000000000000175",
+		"companyShortname": null,
+		"count": 158,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Fazendo barulho",
+		"id": "0000000000000340",
+		"companyShortname": null,
+		"count": 149,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Não consigo fazer operação por telefone",
+		"id": "0000000000001503",
+		"companyShortname": null,
+		"count": 143,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	},
+	{
+		"name": "Milhas não creditadas",
+		"id": "0000000000001335",
+		"companyShortname": null,
+		"count": 142,
+		"index": null,
+		"logo": null,
+		"hasVerificada": false,
+		"recorrencyPercentual": null
+	}
+]

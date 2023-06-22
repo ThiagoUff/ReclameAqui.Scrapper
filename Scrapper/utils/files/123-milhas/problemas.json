@@ -1,0 +1,472 @@
+[
+					{
+						"name": "Estorno do valor pago",
+						"id": "0000000000000007",
+						"companyShortname": null,
+						"count": 25508,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Outro problema",
+						"id": "0000000000000000",
+						"companyShortname": null,
+						"count": 15298,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Problemas na finalização da compra",
+						"id": "0000000000001577",
+						"companyShortname": null,
+						"count": 8840,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Não recebi o pagamento",
+						"id": "0000000000001656",
+						"companyShortname": null,
+						"count": 6233,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Não consigo cancelar",
+						"id": "0000000000001227",
+						"companyShortname": null,
+						"count": 4433,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Mau atendimento do prestador de serviço",
+						"id": "0000000000001463",
+						"companyShortname": null,
+						"count": 3293,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Propaganda enganosa",
+						"id": "0000000000000009",
+						"companyShortname": null,
+						"count": 2844,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Mau Atendimento",
+						"id": "0000000000000002",
+						"companyShortname": null,
+						"count": 2503,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cobrança indevida",
+						"id": "0000000000000075",
+						"companyShortname": null,
+						"count": 2314,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Demora na execução",
+						"id": "0000000000001462",
+						"companyShortname": null,
+						"count": 2082,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Atraso na entrega",
+						"id": "0000000000000001",
+						"companyShortname": null,
+						"count": 1612,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Utilização de Pontos e Milhas",
+						"id": "0000000000001681",
+						"companyShortname": null,
+						"count": 1037,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Mau atendimento no SAC",
+						"id": "0000000000001459",
+						"companyShortname": null,
+						"count": 530,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Dificuldade de cadastro",
+						"id": "0000000000001461",
+						"companyShortname": null,
+						"count": 502,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Baixa Qualidade",
+						"id": "0000000000000004",
+						"companyShortname": null,
+						"count": 397,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Valor abusivo",
+						"id": "0000000000000171",
+						"companyShortname": null,
+						"count": 320,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Milhas não creditadas",
+						"id": "0000000000001335",
+						"companyShortname": null,
+						"count": 230,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Estorno do valor pago",
+						"id": "0000000000000283",
+						"companyShortname": null,
+						"count": 201,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cobrança duplicada",
+						"id": "0000000000001081",
+						"companyShortname": null,
+						"count": 195,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Resgate de pontos e milhas",
+						"id": "0000000000001680",
+						"companyShortname": null,
+						"count": 131,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Qualidade do serviço prestado",
+						"id": "0000000000000017",
+						"companyShortname": null,
+						"count": 72,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Login-Senha",
+						"id": "0000000000001460",
+						"companyShortname": null,
+						"count": 43,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Fila",
+						"id": "0000000000000548",
+						"companyShortname": null,
+						"count": 37,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Fila para acessar o site",
+						"id": "0000000000001575",
+						"companyShortname": null,
+						"count": 27,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Site fora do ar-Lento",
+						"id": "0000000000001498",
+						"companyShortname": null,
+						"count": 24,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Horário de atendimento",
+						"id": "0000000000001464",
+						"companyShortname": null,
+						"count": 17,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Não recebi voucher",
+						"id": "0000000000000282",
+						"companyShortname": null,
+						"count": 10,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Estorno do valor pago",
+						"id": "0000000000000096",
+						"companyShortname": null,
+						"count": 8,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Não recebimento de e-ticket",
+						"id": "0000000000000281",
+						"companyShortname": null,
+						"count": 7,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Divergência de valores",
+						"id": "0000000000000011",
+						"companyShortname": null,
+						"count": 5,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cancelamento de reserva",
+						"id": "0000000000000456",
+						"companyShortname": null,
+						"count": 4,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Não atende",
+						"id": "0000000000001678",
+						"companyShortname": null,
+						"count": 3,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Problema com o cartão",
+						"id": "0000000000000086",
+						"companyShortname": null,
+						"count": 3,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Atraso no reembolso por cancelamento",
+						"id": "0000000000001633",
+						"companyShortname": null,
+						"count": 3,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Vale-viagem",
+						"id": "0000000000000284",
+						"companyShortname": null,
+						"count": 3,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Atualização de dados cadastrais",
+						"id": "0000000000000532",
+						"companyShortname": null,
+						"count": 2,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cancelamento",
+						"id": "0000000000000078",
+						"companyShortname": null,
+						"count": 2,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Não consigo fazer operação por telefone",
+						"id": "0000000000001503",
+						"companyShortname": null,
+						"count": 2,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Estorno do valor pago",
+						"id": "0000000000001455",
+						"companyShortname": null,
+						"count": 2,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Problemas no embarque",
+						"id": "0000000000001618",
+						"companyShortname": null,
+						"count": 2,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Demora no atendimento",
+						"id": "0000000000000541",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Descumprimento do horário agendado",
+						"id": "0000000000000591",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Pagamento não localiado",
+						"id": "0000000000000079",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Multa abusiva por cancelamento",
+						"id": "0000000000000264",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cobranças indevidas",
+						"id": "0000000000000458",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Reserva",
+						"id": "0000000000000455",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Instalação-Reparo não concluídos",
+						"id": "0000000000000716",
+						"companyShortname": null,
+						"count": 1,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					}
+				]

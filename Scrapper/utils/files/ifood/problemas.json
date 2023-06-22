@@ -1,0 +1,472 @@
+[
+    {
+        "name": "Dificuldade de cadastro",
+        "id": "0000000000001461",
+        "companyShortname": null,
+        "count": 109528,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Estorno do valor pago",
+        "id": "0000000000000007",
+        "companyShortname": null,
+        "count": 106100,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Outro problema",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 93526,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas na finalização da compra",
+        "id": "0000000000001577",
+        "companyShortname": null,
+        "count": 45934,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Login-Senha",
+        "id": "0000000000001460",
+        "companyShortname": null,
+        "count": 43984,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau Atendimento",
+        "id": "0000000000000002",
+        "companyShortname": null,
+        "count": 42514,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Propaganda enganosa",
+        "id": "0000000000000009",
+        "companyShortname": null,
+        "count": 40563,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cobrança indevida",
+        "id": "0000000000000075",
+        "companyShortname": null,
+        "count": 37711,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Qualidade do serviço",
+        "id": "0000000000000164",
+        "companyShortname": null,
+        "count": 36683,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Atraso na entrega",
+        "id": "0000000000000001",
+        "companyShortname": null,
+        "count": 20167,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não consigo cancelar",
+        "id": "0000000000001227",
+        "companyShortname": null,
+        "count": 15422,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau atendimento no SAC",
+        "id": "0000000000001459",
+        "companyShortname": null,
+        "count": 13589,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Qualidade do produto",
+        "id": "0000000000000413",
+        "companyShortname": null,
+        "count": 7740,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto com defeito",
+        "id": "0000000000001201",
+        "companyShortname": null,
+        "count": 5597,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cobrança duplicada",
+        "id": "0000000000001081",
+        "companyShortname": null,
+        "count": 3876,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Site fora do ar-Lento",
+        "id": "0000000000001498",
+        "companyShortname": null,
+        "count": 1905,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Fila para acessar o site",
+        "id": "0000000000001575",
+        "companyShortname": null,
+        "count": 1620,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Valor abusivo",
+        "id": "0000000000000171",
+        "companyShortname": null,
+        "count": 1116,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Instalação-Reparo não concluídos",
+        "id": "0000000000000716",
+        "companyShortname": null,
+        "count": 1003,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sorteios-Concursos",
+        "id": "0000000000001584",
+        "companyShortname": null,
+        "count": 860,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto errado",
+        "id": "0000000000000014",
+        "companyShortname": null,
+        "count": 826,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Qualidade do serviço prestado",
+        "id": "0000000000000017",
+        "companyShortname": null,
+        "count": 701,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problema com entrega de produto-compras",
+        "id": "0000000000000586",
+        "companyShortname": null,
+        "count": 366,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto não recebido",
+        "id": "0000000000001454",
+        "companyShortname": null,
+        "count": 353,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau atendimento do prestador de serviço",
+        "id": "0000000000001463",
+        "companyShortname": null,
+        "count": 313,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Entrega faltando itens",
+        "id": "0000000000000581",
+        "companyShortname": null,
+        "count": 278,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Baixa Qualidade",
+        "id": "0000000000000004",
+        "companyShortname": null,
+        "count": 225,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Demora no atendimento",
+        "id": "0000000000000541",
+        "companyShortname": null,
+        "count": 149,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Forma de pagamento indisponível",
+        "id": "0000000000001576",
+        "companyShortname": null,
+        "count": 142,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Promoções",
+        "id": "0000000000000012",
+        "companyShortname": null,
+        "count": 122,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não atende",
+        "id": "0000000000001678",
+        "companyShortname": null,
+        "count": 118,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Funcionários despreparados",
+        "id": "0000000000001278",
+        "companyShortname": null,
+        "count": 114,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Divergência de valores",
+        "id": "0000000000000011",
+        "companyShortname": null,
+        "count": 92,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produtos estragados",
+        "id": "0000000000000587",
+        "companyShortname": null,
+        "count": 85,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Comportamento do profissional",
+        "id": "0000000000001628",
+        "companyShortname": null,
+        "count": 72,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Estorno do valor pago",
+        "id": "0000000000000096",
+        "companyShortname": null,
+        "count": 61,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Conteúdo menor que o informado na embalagem",
+        "id": "0000000000000891",
+        "companyShortname": null,
+        "count": 54,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto com defeito",
+        "id": "0000000000001458",
+        "companyShortname": null,
+        "count": 46,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Débito indevido",
+        "id": "0000000000001555",
+        "companyShortname": null,
+        "count": 46,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto indisponível",
+        "id": "0000000000000008",
+        "companyShortname": null,
+        "count": 41,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Estorno do valor pago",
+        "id": "0000000000001455",
+        "companyShortname": null,
+        "count": 41,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não consigo fazer operação por telefone",
+        "id": "0000000000001503",
+        "companyShortname": null,
+        "count": 36,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Roubo-Furto",
+        "id": "0000000000000242",
+        "companyShortname": null,
+        "count": 31,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Demora na execução",
+        "id": "0000000000001462",
+        "companyShortname": null,
+        "count": 30,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Atualização de dados cadastrais",
+        "id": "0000000000000532",
+        "companyShortname": null,
+        "count": 26,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Má qualidade",
+        "id": "0000000000000158",
+        "companyShortname": null,
+        "count": 26,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Consistência estranha",
+        "id": "0000000000000890",
+        "companyShortname": null,
+        "count": 25,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]

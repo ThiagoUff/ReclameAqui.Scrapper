@@ -1,0 +1,492 @@
+[
+					{
+						"name": "Outro Tipo de produto/Serviço",
+						"id": "0000000000000000",
+						"companyShortname": null,
+						"count": 102452,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Smartphone",
+						"id": "0000000000000020",
+						"companyShortname": null,
+						"count": 38413,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Móveis",
+						"id": "0000000000001270",
+						"companyShortname": null,
+						"count": 35536,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Celular",
+						"id": "0000000000001395",
+						"companyShortname": null,
+						"count": 25453,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "TV",
+						"id": "0000000000000010",
+						"companyShortname": null,
+						"count": 20543,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Geladeira-Refrigerador",
+						"id": "0000000000000385",
+						"companyShortname": null,
+						"count": 15204,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Entrega",
+						"id": "0000000000000248",
+						"companyShortname": null,
+						"count": 14424,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Fogão-Forno",
+						"id": "0000000000000386",
+						"companyShortname": null,
+						"count": 14234,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Lavadora de roupas e Tanquinho",
+						"id": "0000000000000388",
+						"companyShortname": null,
+						"count": 13556,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Notebooks",
+						"id": "0000000000000370",
+						"companyShortname": null,
+						"count": 10812,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Outros",
+						"id": "0000000000000019",
+						"companyShortname": null,
+						"count": 9626,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Sofás e Estofados",
+						"id": "0000000000000183",
+						"companyShortname": null,
+						"count": 7637,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Ar condicionado",
+						"id": "0000000000000392",
+						"companyShortname": null,
+						"count": 5819,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Mesas e Cadeiras",
+						"id": "0000000000001269",
+						"companyShortname": null,
+						"count": 5792,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Ventiladores e Circuladores de ar",
+						"id": "0000000000000422",
+						"companyShortname": null,
+						"count": 5753,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Camas e camas-box",
+						"id": "0000000000000187",
+						"companyShortname": null,
+						"count": 4346,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Micro-ondas",
+						"id": "0000000000000387",
+						"companyShortname": null,
+						"count": 3983,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Panela",
+						"id": "0000000000000427",
+						"companyShortname": null,
+						"count": 2994,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Fraldas",
+						"id": "0000000000000640",
+						"companyShortname": null,
+						"count": 2940,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Colchões e acessórios",
+						"id": "0000000000000689",
+						"companyShortname": null,
+						"count": 2932,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Aparelhos de som",
+						"id": "0000000000000011",
+						"companyShortname": null,
+						"count": 2922,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Acessórios e Periféricos",
+						"id": "0000000000001396",
+						"companyShortname": null,
+						"count": 2891,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Móveis para Escritório",
+						"id": "0000000000001267",
+						"companyShortname": null,
+						"count": 2784,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Fritadeira elétrica",
+						"id": "0000000000000408",
+						"companyShortname": null,
+						"count": 2480,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Console (Videogame)",
+						"id": "0000000000000581",
+						"companyShortname": null,
+						"count": 2424,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Relógios",
+						"id": "0000000000000328",
+						"companyShortname": null,
+						"count": 2400,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Escovas - Modeladores - Babyliss",
+						"id": "0000000000000286",
+						"companyShortname": null,
+						"count": 2386,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Livros",
+						"id": "0000000000000692",
+						"companyShortname": null,
+						"count": 2292,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Componentes, peças e acessórios",
+						"id": "0000000000000382",
+						"companyShortname": null,
+						"count": 2219,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Impressoras",
+						"id": "0000000000000373",
+						"companyShortname": null,
+						"count": 2119,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Bonecos e Bonecas",
+						"id": "0000000000000566",
+						"companyShortname": null,
+						"count": 2074,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cooktop",
+						"id": "0000000000000396",
+						"companyShortname": null,
+						"count": 2023,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Tênis",
+						"id": "0000000000000347",
+						"companyShortname": null,
+						"count": 1977,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Tablets",
+						"id": "0000000000000372",
+						"companyShortname": null,
+						"count": 1954,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Aspiradores e vassouras",
+						"id": "0000000000000398",
+						"companyShortname": null,
+						"count": 1934,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Liquidificadores",
+						"id": "0000000000000411",
+						"companyShortname": null,
+						"count": 1903,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Caixas de som e fone de ouvido",
+						"id": "0000000000000379",
+						"companyShortname": null,
+						"count": 1886,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Monitores",
+						"id": "0000000000000375",
+						"companyShortname": null,
+						"count": 1853,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Cafeteiras e Chaleiras",
+						"id": "0000000000000401",
+						"companyShortname": null,
+						"count": 1701,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Secador de cabelo",
+						"id": "0000000000001004",
+						"companyShortname": null,
+						"count": 1697,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Perfume",
+						"id": "0000000000000690",
+						"companyShortname": null,
+						"count": 1654,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Jogos",
+						"id": "0000000000000582",
+						"companyShortname": null,
+						"count": 1523,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Coifa e depurador",
+						"id": "0000000000000397",
+						"companyShortname": null,
+						"count": 1359,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Canais de Atendimento",
+						"id": "0000000000001129",
+						"companyShortname": null,
+						"count": 1331,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Aparelho de jantar",
+						"id": "0000000000000447",
+						"companyShortname": null,
+						"count": 1139,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Carrinhos e veículos",
+						"id": "0000000000000571",
+						"companyShortname": null,
+						"count": 1121,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Blusas",
+						"id": "0000000000000336",
+						"companyShortname": null,
+						"count": 1110,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Mochilas",
+						"id": "0000000000000363",
+						"companyShortname": null,
+						"count": 1073,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					},
+					{
+						"name": "Chapinhas (Pranchas)",
+						"id": "0000000000000285",
+						"companyShortname": null,
+						"count": 1068,
+						"index": null,
+						"logo": null,
+						"hasVerificada": false,
+						"recorrencyPercentual": null
+					}
+				]

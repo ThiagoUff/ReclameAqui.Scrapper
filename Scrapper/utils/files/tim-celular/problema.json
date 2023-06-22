@@ -1,0 +1,472 @@
+[
+    {
+        "name": "Cobrança indevida",
+        "id": "0000000000000075",
+        "companyShortname": null,
+        "count": 79637,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Outro problema",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 35270,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Planos e tarifas",
+        "id": "0000000000000865",
+        "companyShortname": null,
+        "count": 26306,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Consumo de crédito",
+        "id": "0000000000000871",
+        "companyShortname": null,
+        "count": 26272,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mudança de plano",
+        "id": "0000000000000639",
+        "companyShortname": null,
+        "count": 22687,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cancelamento",
+        "id": "0000000000000078",
+        "companyShortname": null,
+        "count": 19890,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Qualidade do serviço prestado",
+        "id": "0000000000000017",
+        "companyShortname": null,
+        "count": 18703,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau Atendimento",
+        "id": "0000000000000002",
+        "companyShortname": null,
+        "count": 16694,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau atendimento do prestador de serviço",
+        "id": "0000000000001463",
+        "companyShortname": null,
+        "count": 15360,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com o chip",
+        "id": "0000000000000873",
+        "companyShortname": null,
+        "count": 11925,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Portabilidade",
+        "id": "0000000000000523",
+        "companyShortname": null,
+        "count": 11566,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Promoções",
+        "id": "0000000000000012",
+        "companyShortname": null,
+        "count": 11022,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Estorno do valor pago",
+        "id": "0000000000000007",
+        "companyShortname": null,
+        "count": 10191,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problema com recarga",
+        "id": "0000000000000100",
+        "companyShortname": null,
+        "count": 9271,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Qualidade da internet",
+        "id": "0000000000000872",
+        "companyShortname": null,
+        "count": 7042,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Valor abusivo",
+        "id": "0000000000000171",
+        "companyShortname": null,
+        "count": 6279,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Demora na execução",
+        "id": "0000000000001462",
+        "companyShortname": null,
+        "count": 6240,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Corte indevido da linha",
+        "id": "0000000000000868",
+        "companyShortname": null,
+        "count": 6107,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Consumo da franquia",
+        "id": "0000000000000876",
+        "companyShortname": null,
+        "count": 4982,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Instabilidade do sinal",
+        "id": "0000000000000875",
+        "companyShortname": null,
+        "count": 3741,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Baixa Qualidade",
+        "id": "0000000000000004",
+        "companyShortname": null,
+        "count": 3057,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produto errado",
+        "id": "0000000000000014",
+        "companyShortname": null,
+        "count": 2958,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Serasa-SPC",
+        "id": "0000000000000215",
+        "companyShortname": null,
+        "count": 2802,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Atraso na entrega",
+        "id": "0000000000000001",
+        "companyShortname": null,
+        "count": 2613,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cancelamento-troca de pacote de tarifas",
+        "id": "0000000000001471",
+        "companyShortname": null,
+        "count": 2349,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cobertura",
+        "id": "0000000000000874",
+        "companyShortname": null,
+        "count": 2317,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Qualidade das ligações",
+        "id": "0000000000000862",
+        "companyShortname": null,
+        "count": 2038,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Instabilidade de sinal",
+        "id": "0000000000000881",
+        "companyShortname": null,
+        "count": 1946,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não conecta à internet",
+        "id": "0000000000000045",
+        "companyShortname": null,
+        "count": 1154,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pagamento automático",
+        "id": "0000000000000869",
+        "companyShortname": null,
+        "count": 1080,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Comportamento do profissional",
+        "id": "0000000000001628",
+        "companyShortname": null,
+        "count": 994,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Funcionários despreparados",
+        "id": "0000000000001278",
+        "companyShortname": null,
+        "count": 929,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não consigo fazer operação por telefone",
+        "id": "0000000000001503",
+        "companyShortname": null,
+        "count": 922,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas com as ligações",
+        "id": "0000000000000069",
+        "companyShortname": null,
+        "count": 747,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Aplicativos",
+        "id": "0000000000000766",
+        "companyShortname": null,
+        "count": 733,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas de sinal",
+        "id": "0000000000000064",
+        "companyShortname": null,
+        "count": 625,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Assistência técnica",
+        "id": "0000000000000866",
+        "companyShortname": null,
+        "count": 548,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Instalação-Reparo não concluídos",
+        "id": "0000000000000716",
+        "companyShortname": null,
+        "count": 473,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Propaganda enganosa",
+        "id": "0000000000000009",
+        "companyShortname": null,
+        "count": 369,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não atende",
+        "id": "0000000000001678",
+        "companyShortname": null,
+        "count": 362,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Demora no atendimento",
+        "id": "0000000000000541",
+        "companyShortname": null,
+        "count": 331,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sorteios-Concursos",
+        "id": "0000000000001584",
+        "companyShortname": null,
+        "count": 295,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mau atendimento no SAC",
+        "id": "0000000000001459",
+        "companyShortname": null,
+        "count": 247,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Qualidade do sinal",
+        "id": "0000000000000348",
+        "companyShortname": null,
+        "count": 243,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Horário de atendimento",
+        "id": "0000000000001464",
+        "companyShortname": null,
+        "count": 242,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Não liga",
+        "id": "0000000000000029",
+        "companyShortname": null,
+        "count": 225,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Ligação finalizada",
+        "id": "0000000000001676",
+        "companyShortname": null,
+        "count": 208,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]

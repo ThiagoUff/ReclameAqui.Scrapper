@@ -1,0 +1,482 @@
+[
+    {
+        "name": "Outro Tipo de produto/Serviço",
+        "id": "0000000000000000",
+        "companyShortname": null,
+        "count": 73974,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Serviço de Entrega",
+        "id": "0000000000000788",
+        "companyShortname": null,
+        "count": 51475,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Problemas Gerais",
+        "id": "0000000000001409",
+        "companyShortname": null,
+        "count": 50087,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produtos",
+        "id": "0000000000001170",
+        "companyShortname": null,
+        "count": 45277,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Atendimento",
+        "id": "0000000000000211",
+        "companyShortname": null,
+        "count": 12116,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pagamentos e Documentos",
+        "id": "0000000000001370",
+        "companyShortname": null,
+        "count": 11188,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Tênis",
+        "id": "0000000000000347",
+        "companyShortname": null,
+        "count": 7626,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Pagamentos eletrônicos",
+        "id": "0000000000000989",
+        "companyShortname": null,
+        "count": 3813,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Calças",
+        "id": "0000000000000337",
+        "companyShortname": null,
+        "count": 3783,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Blusas",
+        "id": "0000000000000336",
+        "companyShortname": null,
+        "count": 3693,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Camisetas",
+        "id": "0000000000000335",
+        "companyShortname": null,
+        "count": 3323,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Outros",
+        "id": "0000000000000019",
+        "companyShortname": null,
+        "count": 2968,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Propaganda Enganosa",
+        "id": "0000000000001195",
+        "companyShortname": null,
+        "count": 2829,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Canais de Atendimento",
+        "id": "0000000000001129",
+        "companyShortname": null,
+        "count": 2696,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Transporte de carga",
+        "id": "0000000000000787",
+        "companyShortname": null,
+        "count": 2441,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Fone de ouvido",
+        "id": "0000000000000022",
+        "companyShortname": null,
+        "count": 2259,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Administrativo",
+        "id": "0000000000001131",
+        "companyShortname": null,
+        "count": 2061,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Equipe de Atendimento",
+        "id": "0000000000001197",
+        "companyShortname": null,
+        "count": 1922,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Componentes, peças e acessórios",
+        "id": "0000000000000382",
+        "companyShortname": null,
+        "count": 1640,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Lingerie",
+        "id": "0000000000000339",
+        "companyShortname": null,
+        "count": 1522,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Caixas de som e fone de ouvido",
+        "id": "0000000000000379",
+        "companyShortname": null,
+        "count": 1064,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Vestidos",
+        "id": "0000000000000344",
+        "companyShortname": null,
+        "count": 946,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bolsas",
+        "id": "0000000000000362",
+        "companyShortname": null,
+        "count": 928,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Capas protetoras",
+        "id": "0000000000000023",
+        "companyShortname": null,
+        "count": 924,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Brinquedos eletrônicos",
+        "id": "0000000000000570",
+        "companyShortname": null,
+        "count": 907,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Casacos e jaquetas",
+        "id": "0000000000000338",
+        "companyShortname": null,
+        "count": 853,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Carregadores",
+        "id": "0000000000000812",
+        "companyShortname": null,
+        "count": 822,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Shorts",
+        "id": "0000000000000343",
+        "companyShortname": null,
+        "count": 777,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "HDs externos e pen drives",
+        "id": "0000000000000380",
+        "companyShortname": null,
+        "count": 658,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sapatos",
+        "id": "0000000000000350",
+        "companyShortname": null,
+        "count": 637,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Botas",
+        "id": "0000000000000352",
+        "companyShortname": null,
+        "count": 635,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Mochilas",
+        "id": "0000000000000363",
+        "companyShortname": null,
+        "count": 624,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cuecas",
+        "id": "0000000000000346",
+        "companyShortname": null,
+        "count": 585,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Sandálias",
+        "id": "0000000000000349",
+        "companyShortname": null,
+        "count": 549,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Cartão de crédito",
+        "id": "0000000000000025",
+        "companyShortname": null,
+        "count": 547,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Equipe",
+        "id": "0000000000001179",
+        "companyShortname": null,
+        "count": 450,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Aparelhos de som",
+        "id": "0000000000000011",
+        "companyShortname": null,
+        "count": 424,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Chinelo",
+        "id": "0000000000000351",
+        "companyShortname": null,
+        "count": 410,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Financeiras",
+        "id": "0000000000000030",
+        "companyShortname": null,
+        "count": 397,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Bonecos e Bonecas",
+        "id": "0000000000000566",
+        "companyShortname": null,
+        "count": 387,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Maiôs e biquinis",
+        "id": "0000000000000341",
+        "companyShortname": null,
+        "count": 369,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Produtos Personalizados",
+        "id": "0000000000001301",
+        "companyShortname": null,
+        "count": 343,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Peças de reposição",
+        "id": "0000000000000818",
+        "companyShortname": null,
+        "count": 335,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Meias",
+        "id": "0000000000000345",
+        "companyShortname": null,
+        "count": 313,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Conversor digital",
+        "id": "0000000000000018",
+        "companyShortname": null,
+        "count": 293,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Películas para tela",
+        "id": "0000000000000813",
+        "companyShortname": null,
+        "count": 289,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Malas",
+        "id": "0000000000000364",
+        "companyShortname": null,
+        "count": 275,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    },
+    {
+        "name": "Suportes",
+        "id": "0000000000000081",
+        "companyShortname": null,
+        "count": 266,
+        "index": null,
+        "logo": null,
+        "hasVerificada": false,
+        "recorrencyPercentual": null
+    }
+]
