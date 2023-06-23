@@ -1,3 +1,4 @@
+import datetime as dt
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -10,7 +11,9 @@ from consts import cat_all, prob_all, prod_all
 companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood',
              'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
 
-status_list = ['', 'NOT_ANSWERED', 'ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
+# status_list = ['', 'NOT_ANSWERED', 'ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
+status_list = ['ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
+# status_list = ['EVALUATED']
 ids = []
 
 # Definir o cabeçalho de User-Agent
@@ -54,20 +57,20 @@ def parse_details(details_soap, company):
         'data-testid': 'listitem-produto'}, True, False)
 
     voltaria_fazer_negocio = soap_find(
-        details_soap, 'p', {'data-testid': 'complaint-deal-again'}, True, False)
+        details_soap, 'div', {'data-testid': 'complaint-deal-again'}, True, False)
     nota = soap_find(details_soap, 'div', "uh4o7z-3 jSJcMd", False, False)
 
     interactions = details_soap.find_all(
-        'dev', attrs={'data-testid': 'complaint-interaction'})
+        'div', attrs={'data-testid': 'complaint-interaction'})
     interaction_items = []
     for interaction in interactions:
         interaction_type = interaction.find('h2')['type']
         interaction_date = interaction.find(
-            'span', class_="sc-1o3atjt-3 khRvYe").text.strip()
+            'span', class_="sc-1o3atjt-3 khRvYe").text.strip().replace('às ', '')
         interaction_text = interaction.find(
             'p', class_="sc-1o3atjt-4 kBLLZs").text.strip()
         interaction_items.append({'interaction_type': interaction_type,
-                                  'interaction_date': interaction_date,
+                                  'interaction_date': dt.datetime.strptime(interaction_date, '%d/%m/%Y %H:%M'),
                                   'interaction_text': interaction_text})
 
     print('Título: ', titulo)
@@ -79,13 +82,14 @@ def parse_details(details_soap, company):
                                           reclamacao=reclamacao,
                                           estado=localizacao.split(' - ')[1],
                                           cidade=localizacao.split(' - ')[0],
-                                          data_criacao=data_criacao,
-                                          id=id,
+                                          data_criacao=dt.datetime.strptime(
+                                              data_criacao, '%d/%m/%Y %H:%M'),
+                                          id=int(id),
                                           categoria=categoria,
                                           problema=problema,
                                           produto=produto,
-                                          voltaria_fazer_negocio=voltaria_fazer_negocio,
-                                          nota=nota,
+                                          voltaria_fazer_negocio=True if voltaria_fazer_negocio == "Sim" else False,
+                                          nota=None if not nota else int(nota),
                                           interaction_items=interaction_items))
     manager.fechar_conexao()
 
@@ -157,11 +161,13 @@ def process_company(company):
                         soup = BeautifulSoup(response.text, 'html.parser')
 
                         # Encontrar todas as divs de reclamação
-                        reclamacoes = soup.find_all('div', class_='sc-1pe7b5t-0 iQGzPh')
+                        reclamacoes = soup.find_all(
+                            'div', class_='sc-1pe7b5t-0 iQGzPh')
 
                         # Verificar se há reclamações na página
                         if len(reclamacoes) == 0:
-                            print(f'Nenhuma reclamação encontrada na página {url}')
+                            print(
+                                f'Nenhuma reclamação encontrada na página {url}')
                             break
                         # Loop para processar cada reclamação da página
                         for reclamacao in reclamacoes:
@@ -177,7 +183,7 @@ def process_company(company):
     manager.fechar_conexao()
 
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
     results = executor.map(process_company, companies)
 
 # for company in companies:
