@@ -5,6 +5,12 @@
 *.userosscache
 *.sln.docstates
 
+/visualizations/news/mydata/*
+/visualizations/olds/mydata/*
+/Dataset/*
+/scrapper-dataset/excel/*
+/scrapper-dataset/json/*
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

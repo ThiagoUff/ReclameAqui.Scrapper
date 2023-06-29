@@ -6,14 +6,15 @@ import concurrent.futures
 
 from Reclamacao import Reclamacao
 from Repo import MongoDBManager
-from consts import cat_all, prob_all, prod_all
+from utils.Extractors import gerar_arquivo_excel, gerar_arquivo_json
+from utils.consts import cat_all, prob_all, prod_all
 
-companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood',
-             'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
-
+# companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood',
+            #  'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
+companies = ['live-tim']
 # status_list = ['', 'NOT_ANSWERED', 'ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
-status_list = ['ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
-# status_list = ['EVALUATED']
+#status_list = ['ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
+status_list = ['EVALUATED']
 ids = []
 
 # Definir o cabeçalho de User-Agent
@@ -178,13 +179,19 @@ def process_company(company):
                         print('--- Fim da Pagina ---')
 
     manager = MongoDBManager(company)
-    manager.gerar_arquivo_json()
-    manager.gerar_arquivo_excel()
+    gerar_arquivo_json(manager.get_all(), company)
+    gerar_arquivo_excel(manager.get_all(), company)
     manager.fechar_conexao()
 
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
     results = executor.map(process_company, companies)
 
-# for company in companies:
-#     process_company(company)
+reclamacoes = []
+for company in companies:
+    manager = MongoDBManager(company)
+    reclamacoes.extend(list(manager.get_all()))
+    manager.fechar_conexao()
+
+gerar_arquivo_json(reclamacoes, "all-companies")
+gerar_arquivo_excel(reclamacoes, "all-companies")

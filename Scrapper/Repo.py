@@ -38,53 +38,8 @@ class MongoDBManager:
         else:
             print("Reclamação atualizada no banco de dados. ID:", reclamacao.id)
 
-    def gerar_arquivo_json(self):
-        documents = self.collection.find()
-        json_documents = []
-        for document in documents:
-            json_document = json.dumps(document, default=str)
-            json_documents.append(json_document)
-        with open(f'{self.collection}.json', 'w') as arquivo:
-            json.dump(json_documents, arquivo)
-
-
-
-    def gerar_arquivo_excel(self):
-        documents = self.collection.find()
-        # Criação do objeto Workbook
-        wb = Workbook()
-
-        # Seleciona a planilha ativa
-        ws = wb.active
-        ws['A1'] = 'id'
-        ws['B1'] = 'titulo'
-        ws['C1'] = 'status'
-        ws['D1'] = 'data_criacao'
-        ws['E1'] = 'reclamacao'
-        ws['F1'] = 'estado'
-        ws['G1'] = 'cidade'
-        ws['H1'] = 'categoria'
-        ws['I1'] = 'problema'
-        ws['J1'] = 'produto'
-        ws['L1'] = 'voltaria_fazer_negocio'
-        ws['M1'] = 'nota'
-
-        for index in range(0, len(documents)):
-            ws[f'A{index+2}'] = documents[index]['id']
-            ws[f'B{index+2}'] = documents[index]['titulo']
-            ws[f'C{index+2}'] = documents[index]['status']
-            ws[f'D{index+2}'] = documents[index]['data_criacao']
-            ws[f'E{index+2}'] = documents[index]['reclamacao']
-            ws[f'F{index+2}'] = documents[index]['estado']
-            ws[f'G{index+2}'] = documents[index]['cidade']
-            ws[f'H{index+2}'] = documents[index]['categoria']
-            ws[f'I{index+2}'] = documents[index]['problema']
-            ws[f'J{index+2}'] = documents[index]['produto']
-            ws[f'L{index+2}'] = documents[index]['voltaria_fazer_negocio']
-            ws[f'M{index+2}'] = documents[index]['nota']
-            
-        wb.save('exemplo.xlsx')
-        
+    def get_all(self):
+        return self.reclamacoes.find({})
     
     def fechar_conexao(self):
         self.client.close()
