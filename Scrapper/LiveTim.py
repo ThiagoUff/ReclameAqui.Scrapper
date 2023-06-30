@@ -9,12 +9,12 @@ from Repo import MongoDBManager
 from utils.Extractors import gerar_arquivo_excel, gerar_arquivo_json
 from utils.consts import cat_all, prob_all, prod_all
 
-# companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood',
-            #  'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
-companies = ['live-tim']
-# status_list = ['', 'NOT_ANSWERED', 'ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
-#status_list = ['ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
-status_list = ['EVALUATED']
+companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood',
+             'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
+#companies = ['live-tim']
+status_list = ['', 'NOT_ANSWERED', 'ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
+# status_list = ['ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
+# status_list = ['EVALUATED']
 ids = []
 
 # Definir o cabeçalho de User-Agent
@@ -34,7 +34,7 @@ def soap_find(soap, string, args, is_attr, has_span):
     return None
 
 
-def parse_details(details_soap, company):
+def parse_details(details_soap, company, url_link):
     id = soap_find(details_soap, 'span', {
                    'data-testid': 'complaint-id'}, True, False)[4:]
     if id in ids:
@@ -91,7 +91,8 @@ def parse_details(details_soap, company):
                                           produto=produto,
                                           voltaria_fazer_negocio=True if voltaria_fazer_negocio == "Sim" else False,
                                           nota=None if not nota else int(nota),
-                                          interaction_items=interaction_items))
+                                          interaction_items=interaction_items, 
+                                          url_link= url_link))
     manager.fechar_conexao()
 
 
@@ -112,7 +113,7 @@ def process_item(item, company):
     detalhe_html = detalhe_response.content
     detalhe_soup = BeautifulSoup(detalhe_html, 'html.parser')
 
-    parse_details(detalhe_soup, company)
+    parse_details(detalhe_soup, company, detalhe_link)
     end_time = time.time()
 
     print('Processamento em:', end_time - start_time)

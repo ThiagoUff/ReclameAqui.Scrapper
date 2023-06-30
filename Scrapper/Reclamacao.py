@@ -11,7 +11,8 @@ class Reclamacao:
             produto,
             voltaria_fazer_negocio,
             nota,
-            interaction_items):
+            interaction_items,
+            url_link):
         self.titulo = titulo
         self.status = status
         self.reclamacao = reclamacao
@@ -25,5 +26,6 @@ class Reclamacao:
         self.voltaria_fazer_negocio = voltaria_fazer_negocio
         self.nota = nota
         self.interaction_items = None if not interaction_items else interaction_items
+        self.url_link = url_link
 
    

@@ -28,6 +28,7 @@ class MongoDBManager:
             'voltaria_fazer_negocio': reclamacao.voltaria_fazer_negocio,
             'nota': reclamacao.nota,
             'interaction_items': reclamacao.interaction_items,
+            'url_link': reclamacao.url_link
         }
         query = {'id': reclamacao.id}
         result = self.reclamacoes.update_one(

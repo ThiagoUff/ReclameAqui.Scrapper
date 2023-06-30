@@ -26,14 +26,15 @@ def gerar_arquivo_excel(documents, filename):
         index = 2
         for document in documents:
             anwser = None
-            sla= None
+            sla = None
             if document['interaction_items']:
-                anwser = list(filter(
-                    lambda x: x['interaction_type'] == "ANSWER", document['interaction_items']))[0]['interaction_date']
-                result = anwser- document['data_criacao']
-                
-                # Gerar a saída formatada
-                sla = result.total_seconds()
+                complaints = list(filter(lambda x: x['interaction_type'] == "ANSWER", document['interaction_items']))
+                if len(complaints) > 0:                
+                    anwser = complaints[0]['interaction_date']
+                    result = anwser - document['data_criacao']
+                    
+                    # Gerar a saída formatada
+                    sla = result.total_seconds()
 
             ws[f'A{index}'] = document['id']
             ws[f'B{index}'] = document['titulo']
