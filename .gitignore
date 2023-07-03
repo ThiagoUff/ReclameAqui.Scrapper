@@ -7,7 +7,7 @@
 
 /visualizations/news/mydata/*
 /visualizations/olds/mydata/*
-/Dataset/*
+/NLP-Classifier/VoltariaNegocioClassifier/test_trainer*
 /scrapper-dataset/excel/*
 /scrapper-dataset/json/*
 
