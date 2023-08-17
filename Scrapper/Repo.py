@@ -40,7 +40,11 @@ class MongoDBManager:
             print("Reclamação atualizada no banco de dados. ID:", reclamacao.id)
 
     def get_all(self):
-        return self.reclamacoes.find({})
+        elements = list(self.reclamacoes.find({}))
+        for element in elements:
+            element['empresa'] = self.collection
+        
+        return elements
     
     def fechar_conexao(self):
         self.client.close()

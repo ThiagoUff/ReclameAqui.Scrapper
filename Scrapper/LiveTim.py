@@ -9,14 +9,13 @@ from Repo import MongoDBManager
 from utils.Extractors import gerar_arquivo_excel, gerar_arquivo_json
 from utils.consts import cat_all, prob_all, prod_all
 
-companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood',
-             'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
-#companies = ['live-tim']
+companies = ['live-tim', 'tim-celular', 'magazine-luiza-loja-online', 'shopee', 'ifood', 'amazon', 'mercado-livre', 'perfectpay', 'casas-bahia-loja-online', '123-milhas', 'netshoes']
+# companies = ['tim-celular']
 status_list = ['', 'NOT_ANSWERED', 'ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
 # status_list = ['ANSWERED', 'EVALUATED', 'PENDING', 'SOLVED']
 # status_list = ['EVALUATED']
 ids = []
-
+start_all_time = time.time()
 # Definir o cabeçalho de User-Agent
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36'
@@ -118,66 +117,70 @@ def process_item(item, company):
 
     print('Processamento em:', end_time - start_time)
     print('Total: ', len(ids))
+    print('Média: ', (time.time() - start_all_time)/len(ids))
     print('------------------')
     print()
     print()
 
 
 def process_company(company):
-    for status in status_list:
-        for produto in prod_all:
-            for categoria in cat_all:
-                for problema in prob_all:
-                    status_text = ""
-                    categoria_text = ""
-                    problema_text = ""
-                    produto_text = ""
-                    if status:
-                        status_text = f"&status={status}"
-                    if categoria:
-                        categoria_text = f"&categoria={categoria}"
-                    if produto:
-                        produto_text = f"&produto={produto}"
-                    if problema:
-                        problema_text = f"&problema={problema}"
+    try:
+        for status in status_list:
+            for produto in prod_all:
+                for categoria in cat_all:
+                    for problema in prob_all:
+                        status_text = ""
+                        categoria_text = ""
+                        problema_text = ""
+                        produto_text = ""
+                        if status:
+                            status_text = f"&status={status}"
+                        if categoria:
+                            categoria_text = f"&categoria={categoria}"
+                        if produto:
+                            produto_text = f"&produto={produto}"
+                        if problema:
+                            problema_text = f"&problema={problema}"
 
-                    base_url = f'https://www.reclameaqui.com.br/empresa/{company}/lista-reclamacoes'
-                    # Loop para percorrer todas as páginas de reclamações
-                    pagina = 1
-                    while True:
-                        print('--- Pagina ---')
-                        # Montar a URL da página atual
-                        url = f'{base_url}/?pagina={pagina}{status_text}{categoria_text}{produto_text}{problema_text}'
-                        print(url)
+                        base_url = f'https://www.reclameaqui.com.br/empresa/{company}/lista-reclamacoes'
+                        # Loop para percorrer todas as páginas de reclamações
+                        pagina = 1
+                        while True:
+                            print('--- Pagina ---')
+                            # Montar a URL da página atual
+                            url = f'{base_url}/?pagina={pagina}{status_text}{categoria_text}{produto_text}{problema_text}'
+                            print(url)
 
-                        # Fazer a requisição HTTP com o cabeçalho de User-Agent
-                        response = requests.get(url, headers=headers)
+                            # Fazer a requisição HTTP com o cabeçalho de User-Agent
+                            response = requests.get(url, headers=headers)
 
-                        # Verificar se a requisição foi bem-sucedida
-                        if response.status_code != 200:
-                            print(
-                                f'Erro ao acessar a página {url}. Status: {response.status_code}')
-                            break
+                            # Verificar se a requisição foi bem-sucedida
+                            if response.status_code != 200:
+                                print(
+                                    f'Erro ao acessar a página {url}. Status: {response.status_code}')
+                                break
 
-                        # Criar o objeto BeautifulSoup
-                        soup = BeautifulSoup(response.text, 'html.parser')
+                            # Criar o objeto BeautifulSoup
+                            soup = BeautifulSoup(response.text, 'html.parser')
 
-                        # Encontrar todas as divs de reclamação
-                        reclamacoes = soup.find_all(
-                            'div', class_='sc-1pe7b5t-0 iQGzPh')
+                            # Encontrar todas as divs de reclamação
+                            reclamacoes = soup.find_all(
+                                'div', class_='sc-1pe7b5t-0 iQGzPh')
 
-                        # Verificar se há reclamações na página
-                        if len(reclamacoes) == 0:
-                            print(
-                                f'Nenhuma reclamação encontrada na página {url}')
-                            break
-                        # Loop para processar cada reclamação da página
-                        for reclamacao in reclamacoes:
-                            process_item(reclamacao, company)
-                        # with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-                            # results = executor.map(, reclamacoes, company)
-                        pagina += 10
-                        print('--- Fim da Pagina ---')
+                            # Verificar se há reclamações na página
+                            if len(reclamacoes) == 0:
+                                print(
+                                    f'Nenhuma reclamação encontrada na página {url}')
+                                break
+                            # Loop para processar cada reclamação da página
+                            for reclamacao in reclamacoes:
+                                process_item(reclamacao, company)
+                            # with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                                # results = executor.map(, reclamacoes, company)
+                            pagina += 10
+                            print('--- Fim da Pagina ---')
+    except Exception as excecao:
+        print(excecao)
 
     manager = MongoDBManager(company)
     gerar_arquivo_json(manager.get_all(), company)
@@ -185,14 +188,16 @@ def process_company(company):
     manager.fechar_conexao()
 
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-    results = executor.map(process_company, companies)
+# with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+#     results = executor.map(process_company, companies)
 
 reclamacoes = []
 for company in companies:
     manager = MongoDBManager(company)
-    reclamacoes.extend(list(manager.get_all()))
+    reclamacoes.extend(manager.get_all())
     manager.fechar_conexao()
 
-gerar_arquivo_json(reclamacoes, "all-companies")
 gerar_arquivo_excel(reclamacoes, "all-companies")
+gerar_arquivo_json(reclamacoes, "all-companies")
+
+print("processo Finalizado!!")

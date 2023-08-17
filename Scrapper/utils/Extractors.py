@@ -1,3 +1,5 @@
+from bson import ObjectId
+from datetime import datetime
 import json
 from openpyxl import Workbook
 
@@ -23,6 +25,7 @@ def gerar_arquivo_excel(documents, filename):
         ws['L1'] = 'nota'
         ws['M1'] = 'respondido_em'
         ws['N1'] = 'sla'
+        ws['O1'] = 'empresa'
         index = 2
         for document in documents:
             anwser = None
@@ -50,6 +53,7 @@ def gerar_arquivo_excel(documents, filename):
             ws[f'L{index}'] = document['nota']
             ws[f'M{index}'] = anwser
             ws[f'N{index}'] = sla
+            ws[f'O{index}'] = document['empresa']
 
             index += 1
 
@@ -60,11 +64,27 @@ def gerar_arquivo_excel(documents, filename):
 
 def gerar_arquivo_json(documents, filename):
     try:
-        json_documents = []
-        for document in documents:
-            json_document = json.dumps(document, default=str)
-            json_documents.append(json_document)
-        with open(f'scrapper-dataset/json/{filename}.json', 'w') as arquivo:
-            json.dump(json_documents, arquivo)
+        remover_propriedade(documents,['_id', 'id', 'interaction_items', 'url_link'])
+        json_data = json.dumps(documents, cls=CustomJSONEncoder ,ensure_ascii=False).encode('utf-8')
+        json_data = json_data.decode('utf-8')
+        with open(f'scrapper-dataset/json/{filename}.json', 'w',  encoding="utf-8") as arquivo:
+            arquivo.write(json_data)    
     except Exception as excecao:
         print(excecao)
+
+class CustomJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        try :
+            if isinstance(obj, ObjectId):
+                return str(obj)  # Converte o ObjectId em uma string
+            elif isinstance(obj, datetime):
+                return obj.isoformat()
+            return super().default(obj)
+        except Exception as excecao:
+            print(excecao)
+
+def remover_propriedade(lista, propriedades):
+    for objeto in lista:
+        for propriedade in propriedades:
+            if propriedade in objeto:
+                del objeto[propriedade]            
