@@ -3,6 +3,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
 import concurrent.futures
+from urllib3.exceptions import InsecureRequestWarning
+from urllib3 import disable_warnings
 
 from Reclamacao import Reclamacao
 from Repo import MongoDBManager
@@ -20,7 +22,9 @@ start_all_time = time.time()
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36'
 }
+session = requests.Session()
 
+disable_warnings(InsecureRequestWarning)
 
 def soap_find(soap, string, args, is_attr, has_span):
     tag = soap.find(string, attrs=args) if is_attr else soap.find(
@@ -102,8 +106,8 @@ def process_item(item, company):
     detalhe_link = f"https://www.reclameaqui.com.br/{item.find('a')['href']}"
 
     print(detalhe_link)
-    detalhe_response = requests.get(
-        detalhe_link, headers=headers)
+    detalhe_response = session.get(
+        detalhe_link, headers=headers, verify=False)
 
     if detalhe_response.status_code != 200:
         print(
@@ -124,6 +128,7 @@ def process_item(item, company):
 
 
 def process_company(company):
+
     try:
         for status in status_list:
             for produto in prod_all:
@@ -152,7 +157,7 @@ def process_company(company):
                             print(url)
 
                             # Fazer a requisição HTTP com o cabeçalho de User-Agent
-                            response = requests.get(url, headers=headers)
+                            response = session.get(url, headers=headers, verify=False)
 
                             # Verificar se a requisição foi bem-sucedida
                             if response.status_code != 200:
@@ -188,8 +193,8 @@ def process_company(company):
     manager.fechar_conexao()
 
 
-# with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-#     results = executor.map(process_company, companies)
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+    results = executor.map(process_company, companies)
 
 reclamacoes = []
 for company in companies:
