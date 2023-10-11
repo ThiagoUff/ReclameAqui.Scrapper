@@ -193,12 +193,14 @@ def process_company(company):
     manager.fechar_conexao()
 
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-    results = executor.map(process_company, companies)
+# with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+#     results = executor.map(process_company, companies)
 
 reclamacoes = []
 for company in companies:
     manager = MongoDBManager(company)
+    gerar_arquivo_json(manager.get_all(), company)
+    gerar_arquivo_excel(manager.get_all(), company)
     reclamacoes.extend(manager.get_all())
     manager.fechar_conexao()
 
